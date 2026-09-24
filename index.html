@@ -1,0 +1,4496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prana & Sage Luxury Yoga Studio & Wellness Center in Sedona. Awaken vitality through mindful movement, subterranean sound alchemy, and cellular hydrothermal restoration.">
+  <title>Prana & Sage | Luxury Yoga Studio & Wellness Center</title>
+  
+  <!-- Google Fonts: Cormorant Garamond (Luxury Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ==========================================================================
+       COMPLETE EMBEDDED STYLESHEET (Floating Zen Capsule Design & Creative Animations)
+       ========================================================================== -->
+  <style>
+    /* ==========================================================================
+       1. COLOR PALETTE & DESIGN SYSTEM TOKENS
+       ========================================================================== */
+    :root {
+      /* Canvas & Backgrounds */
+      --color-silk: #F8F6F0;
+      --color-silk-translucent: rgba(248, 246, 240, 0.88);
+      --color-surface: #FFFFFF;
+      --color-surface-hover: #F2EFE8;
+      --color-surface-translucent: rgba(255, 255, 255, 0.82);
+      
+      /* Borders & Dividers */
+      --color-border: rgba(10, 33, 24, 0.08);
+      --color-border-light: rgba(10, 33, 24, 0.04);
+      --color-border-focus: rgba(201, 148, 54, 0.45);
+
+      /* Deep Emerald Palette */
+      --color-emerald-deep: #0A2118;
+      --color-emerald-dark: #071711;
+      --color-emerald-medium: #1C4434;
+      --color-emerald-soft: #4A7A66;
+      --color-emerald-mist: #EAF2EE;
+
+      /* Champagne Gold & Sun Amber */
+      --color-gold-primary: #C99436;
+      --color-gold-hover: #B38029;
+      --color-gold-light: #F7ECD2;
+      --color-gold-dark: #9A6C1C;
+      --color-gold-gradient: linear-gradient(135deg, #E8C16B 0%, #C99436 50%, #A97321 100%);
+      --color-gold-gradient-hover: linear-gradient(135deg, #F0CC79 0%, #D8A243 50%, #B88028 100%);
+      --color-gold-glow: 0 8px 24px -2px rgba(201, 148, 54, 0.38);
+
+      /* Typography */
+      --color-text-main: #0A2118;
+      --color-text-body: #4F6156;
+      --color-text-muted: #798D82;
+      --color-white: #FFFFFF;
+
+      --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Elevation & Shadows */
+      --shadow-subtle: 0 4px 16px rgba(10, 33, 24, 0.04);
+      --shadow-capsule: 0 16px 40px -8px rgba(10, 33, 24, 0.09), 0 2px 8px rgba(10, 33, 24, 0.03);
+      --shadow-scrolled: 0 20px 50px -10px rgba(10, 33, 24, 0.16), 0 0 0 1px rgba(201, 148, 54, 0.22);
+      --shadow-dropdown: 0 24px 50px -6px rgba(10, 33, 24, 0.14), 0 4px 16px rgba(10, 33, 24, 0.04);
+      --shadow-modal: 0 28px 70px -12px rgba(7, 23, 17, 0.4);
+
+      /* Transitions */
+      --transition-instant: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-spring: 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Dark Mode Theme */
+    body.dark-mode {
+      --color-silk: #080E0B;
+      --color-silk-translucent: rgba(8, 14, 11, 0.88);
+      --color-surface: #101915;
+      --color-surface-hover: #18251F;
+      --color-surface-translucent: rgba(16, 25, 21, 0.82);
+
+      --color-border: rgba(232, 193, 107, 0.14);
+      --color-border-light: rgba(255, 255, 255, 0.06);
+      --color-border-focus: rgba(232, 193, 107, 0.5);
+
+      --color-emerald-deep: #F3F7F4;
+      --color-emerald-dark: #FFFFFF;
+      --color-emerald-medium: #7EB89F;
+      --color-emerald-soft: #A2CBB7;
+      --color-emerald-mist: #15241C;
+
+      --color-gold-primary: #ECC369;
+      --color-gold-hover: #F7D58B;
+      --color-gold-light: #241F14;
+      --color-gold-dark: #C99436;
+      --color-gold-gradient: linear-gradient(135deg, #F5D588 0%, #ECC369 50%, #C48E2F 100%);
+      --color-gold-gradient-hover: linear-gradient(135deg, #FFE09C 0%, #F5CE7A 50%, #D89F3A 100%);
+      --color-gold-glow: 0 8px 28px -2px rgba(236, 195, 105, 0.45);
+
+      --color-text-main: #F3F7F4;
+      --color-text-body: #A4B7AD;
+      --color-text-muted: #7E9388;
+      --color-white: #101915;
+
+      --shadow-subtle: 0 4px 16px rgba(0, 0, 0, 0.4);
+      --shadow-capsule: 0 16px 45px -8px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(232, 193, 107, 0.18);
+      --shadow-scrolled: 0 24px 60px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(232, 193, 107, 0.32);
+      --shadow-dropdown: 0 26px 56px -6px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(232, 193, 107, 0.2);
+      --shadow-modal: 0 30px 75px -10px rgba(0, 0, 0, 0.9);
+    }
+
+    /* ==========================================================================
+       2. RESET & CANVAS FOUNDATIONS
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-silk);
+      color: var(--color-text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      min-height: 160vh; /* Smooth vertical scroll space to experience sticky capsule dynamics */
+      transition: background-color var(--transition-smooth), color var(--transition-smooth);
+      background-image: radial-gradient(circle at 50% 10%, rgba(201, 148, 54, 0.04) 0%, transparent 60%);
+    }
+
+    body.dark-mode {
+      background-image: radial-gradient(circle at 50% 10%, rgba(232, 193, 107, 0.05) 0%, transparent 65%);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color var(--transition-instant);
+    }
+
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ==========================================================================
+       3. FLOATING ZEN CAPSULE NAVBAR
+       ========================================================================== */
+    .header-wrapper {
+      position: fixed;
+      top: 18px;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 1.5rem;
+      pointer-events: none;
+      transition: top 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .header-wrapper.is-scrolled {
+      top: 10px;
+    }
+
+    .navbar {
+      pointer-events: auto;
+      max-width: 1300px;
+      margin: 0 auto;
+      height: 74px;
+      padding: 0 1.25rem 0 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--color-silk-translucent);
+      backdrop-filter: blur(28px) saturate(190%);
+      -webkit-backdrop-filter: blur(28px) saturate(190%);
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-capsule);
+      position: relative;
+      transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  background-color var(--transition-smooth),
+                  border-color var(--transition-smooth);
+    }
+
+    .header-wrapper.is-scrolled .navbar {
+      height: 66px;
+      background: var(--color-surface-translucent);
+      box-shadow: var(--shadow-scrolled);
+    }
+
+    /* Flowing Celestial Aurora Perimeter Halo Border */
+    @keyframes auroraFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .navbar::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 999px;
+      padding: 1.5px;
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--color-gold-primary) 25%, 
+        #5CB590 50%, 
+        var(--color-gold-primary) 75%, 
+        transparent 100%
+      );
+      background-size: 250% 100%;
+      animation: auroraFlow 9s ease-in-out infinite;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    /* Specular Crystal Light Gleam across the Floating Capsule */
+    @keyframes capsuleSpecular {
+      0% {
+        transform: translateX(-150%) skewX(-20deg);
+        opacity: 0;
+      }
+      15% {
+        opacity: 0.65;
+      }
+      32% {
+        transform: translateX(250%) skewX(-20deg);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(250%) skewX(-20deg);
+        opacity: 0;
+      }
+    }
+
+    .navbar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32%;
+      height: 100%;
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.32) 50%, 
+        transparent 100%
+      );
+      border-radius: 999px;
+      animation: capsuleSpecular 12s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    body.dark-mode .navbar::after {
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(232, 193, 107, 0.18) 50%, 
+        transparent 100%
+      );
+    }
+
+    /* ==========================================================================
+       4. BRAND LOGO & SACRED LOTUS ANIMATIONS
+       ========================================================================== */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.95rem;
+      text-decoration: none;
+      z-index: 1003;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .brand-icon {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      transition: transform var(--transition-spring), filter var(--transition-smooth);
+      filter: drop-shadow(0 4px 12px rgba(10, 33, 24, 0.1));
+    }
+
+    .brand:hover .brand-icon {
+      transform: scale(1.08) translateY(-1px);
+      filter: drop-shadow(0 8px 22px rgba(201, 148, 54, 0.45));
+    }
+
+    /* 1. Mandala Sacred Orbit (Outer Clockwise, Inner Counter-Clockwise) */
+    @keyframes lotusMandalaOrbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes mandalaCounterRotate {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    .mandala-outer-ring {
+      transform-origin: 32px 32px;
+      animation: lotusMandalaOrbit 26s linear infinite;
+      transition: animation-duration 0.6s ease;
+    }
+
+    .mandala-inner-ring {
+      transform-origin: 32px 32px;
+      animation: mandalaCounterRotate 36s linear infinite;
+      stroke: var(--color-gold-primary);
+      opacity: 0.55;
+    }
+
+    .brand:hover .mandala-outer-ring {
+      animation-duration: 9s;
+    }
+
+    .brand:hover .mandala-inner-ring {
+      animation-duration: 14s;
+    }
+
+    /* 2. Prana Breathing Pulse (Crown Chakra Bindu & Flame) */
+    @keyframes pranaBreathe {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.85;
+        filter: drop-shadow(0 0 2px rgba(201, 148, 54, 0.5));
+      }
+      50% {
+        transform: scale(1.35);
+        opacity: 1;
+        filter: drop-shadow(0 0 7px rgba(201, 148, 54, 0.95)) drop-shadow(0 0 12px rgba(245, 214, 136, 0.85));
+      }
+    }
+
+    .crown-bindu {
+      transform-origin: 32px 14px;
+      animation: pranaBreathe 4s ease-in-out infinite;
+    }
+
+    .crown-flame {
+      transform-origin: 32px 11px;
+      animation: pranaBreathe 4s ease-in-out infinite 0.4s;
+    }
+
+    /* 3. Chandra Moon Glow */
+    @keyframes chandraGlow {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.55; }
+    }
+
+    .chandra-moon {
+      animation: chandraGlow 6s ease-in-out infinite;
+    }
+
+    /* 4. Lotus Petals Organic Spring Bloom on Hover */
+    .brand-icon .lotus-petal {
+      transform-origin: 32px 39px;
+      transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .brand:hover .lotus-petal.petal-left-outer {
+      transform: rotate(-7deg) scale(1.06);
+    }
+
+    .brand:hover .lotus-petal.petal-right-outer {
+      transform: rotate(7deg) scale(1.06);
+    }
+
+    .brand:hover .lotus-petal.petal-left-inner {
+      transform: rotate(-3.5deg) scale(1.03);
+    }
+
+    .brand:hover .lotus-petal.petal-right-inner {
+      transform: rotate(3.5deg) scale(1.03);
+    }
+
+    /* 5. Grounding Sacred Energy Ripples */
+    @keyframes groundingRipplePulse {
+      0%, 100% { opacity: 0.7; transform: scaleX(1); }
+      50% { opacity: 1; transform: scaleX(1.04); }
+    }
+
+    .grounding-ripple {
+      transform-origin: 32px 52px;
+      animation: groundingRipplePulse 5s ease-in-out infinite;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Luminous Gold Leaf Foil Shimmer on Brand Title */
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      color: var(--color-text-main);
+      line-height: 1.05;
+      text-transform: uppercase;
+      background: linear-gradient(120deg, 
+        var(--color-text-main) 0%, 
+        var(--color-text-main) 35%, 
+        var(--color-gold-primary) 50%, 
+        var(--color-text-main) 65%, 
+        var(--color-text-main) 100%
+      );
+      background-size: 240% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: background-position 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .brand:hover .brand-title {
+      background-position: -120% center;
+    }
+
+    .brand-tagline {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: var(--color-gold-primary);
+      font-weight: 600;
+      margin-top: 3px;
+      transition: color var(--transition-smooth);
+    }
+
+    /* ==========================================================================
+       5. NAVIGATION MENU & DYNAMIC MAGNETIC SLIDING PILL (DESKTOP)
+       ========================================================================== */
+    .nav-menu {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      padding: 0.3rem 0.35rem;
+      background: rgba(10, 33, 24, 0.035);
+      border-radius: 999px;
+      border: 1px solid rgba(10, 33, 24, 0.06);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background-color var(--transition-smooth), border-color var(--transition-smooth);
+    }
+
+    body.dark-mode .nav-menu {
+      background: rgba(232, 193, 107, 0.05);
+      border-color: rgba(232, 193, 107, 0.12);
+    }
+
+    /* Dynamic Zen Magnetic Sliding Pill Indicator */
+    .nav-slider-pill {
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 0;
+      border-radius: 999px;
+      background: var(--color-surface);
+      box-shadow: 0 4px 14px rgba(10, 33, 24, 0.08), 0 0 0 1px rgba(201, 148, 54, 0.25);
+      transition: transform 0.38s cubic-bezier(0.34, 1.25, 0.64, 1), 
+                  width 0.38s cubic-bezier(0.34, 1.25, 0.64, 1),
+                  opacity 0.2s ease;
+      pointer-events: none;
+      z-index: 1;
+      will-change: transform, width;
+    }
+
+    body.dark-mode .nav-slider-pill {
+      background: rgba(24, 38, 32, 0.92);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(232, 193, 107, 0.32);
+    }
+
+    .nav-item {
+      position: relative;
+      z-index: 2;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.42rem;
+      padding: 0.62rem 1.15rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--color-text-main);
+      border-radius: 999px;
+      letter-spacing: 0.01em;
+      position: relative;
+      z-index: 2;
+      transition: color 0.22s ease, transform 0.22s ease;
+      background: transparent !important;
+    }
+
+    .nav-link svg.chevron {
+      width: 14px;
+      height: 14px;
+      stroke-width: 2.2;
+      transition: transform var(--transition-spring), stroke var(--transition-instant);
+      opacity: 0.75;
+    }
+
+    .nav-link:hover,
+    .nav-item:hover > .nav-link {
+      color: var(--color-gold-primary);
+      transform: translateY(-1px);
+    }
+
+    .nav-item:hover > .nav-link svg.chevron {
+      transform: rotate(180deg);
+      opacity: 1;
+      stroke: var(--color-gold-primary);
+    }
+
+    .nav-link.is-active {
+      font-weight: 600;
+      color: var(--color-gold-primary);
+    }
+
+    /* ==========================================================================
+       6. LOTUS BLOSSOM CASCADING DROPDOWN MENU
+       ========================================================================== */
+    @keyframes blossomReveal {
+      0% {
+        opacity: 0;
+        transform: translateY(14px) scale(0.92);
+        filter: blur(4px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(6px) scale(1);
+        filter: blur(0);
+      }
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--color-surface);
+      border-radius: 16px;
+      padding: 0.55rem;
+      min-width: 170px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-dropdown);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px) scale(0.94);
+      transform-origin: top left;
+      transition: opacity 0.22s ease, 
+                  transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                  visibility 0.22s,
+                  background-color var(--transition-smooth),
+                  border-color var(--transition-smooth);
+      pointer-events: none;
+      z-index: 990;
+    }
+
+    body.dark-mode .dropdown-menu {
+      background-color: rgba(16, 25, 21, 0.95);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(232, 193, 107, 0.22);
+      box-shadow: 0 24px 52px -6px rgba(0, 0, 0, 0.75), 0 0 20px rgba(232, 193, 107, 0.12);
+    }
+
+    .nav-item:hover > .dropdown-menu,
+    .nav-item:focus-within > .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      animation: blossomReveal 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      pointer-events: auto;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.68rem 1rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--color-text-main);
+      border-radius: 10px;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.22s cubic-bezier(0.34, 1.3, 0.64, 1);
+      text-decoration: none;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .dropdown-item::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-gold-gradient);
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.25s cubic-bezier(0.34, 1.5, 0.64, 1), opacity 0.2s ease;
+      box-shadow: 0 0 8px var(--color-gold-primary);
+    }
+
+    .dropdown-item:hover::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .dropdown-item:hover {
+      background-color: var(--color-surface-hover);
+      color: var(--color-gold-primary);
+      transform: translateX(5px);
+    }
+
+    /* ==========================================================================
+       7. ACTION CONTROLS (Theme Switcher, Login CTA, Hamburger)
+       ========================================================================== */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* Circular Frosted Action Button */
+    .action-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-main);
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-subtle);
+      transition: all var(--transition-instant);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .action-btn:hover {
+      background-color: var(--color-surface-hover);
+      border-color: var(--color-border-focus);
+      color: var(--color-gold-primary);
+      transform: translateY(-1px);
+    }
+
+    .action-btn svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    /* Pro Theme Toggle Button with Celestial Orbit Animation */
+    .theme-toggle {
+      cursor: pointer;
+    }
+
+    .theme-toggle svg {
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), color var(--transition-instant);
+    }
+
+    .theme-toggle:hover svg {
+      transform: rotate(35deg) scale(1.15);
+      color: var(--color-gold-primary);
+    }
+
+    body.dark-mode .theme-toggle:hover svg {
+      transform: rotate(50deg) scale(1.15);
+      color: var(--color-gold-primary);
+    }
+
+    /* Cosmic celestial 360 flip when toggled */
+    .theme-toggle.switching svg {
+      animation: celestialOrbit 0.5s cubic-bezier(0.34, 1.4, 0.64, 1);
+    }
+
+    @keyframes celestialOrbit {
+      0% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(180deg) scale(0.35); opacity: 0.25; }
+      100% { transform: rotate(360deg) scale(1); opacity: 1; }
+    }
+
+    /* Pro CTA Button ("Log In") with Breathing Golden Aura Pulse */
+    @keyframes ctaPulse {
+      0%, 100% {
+        box-shadow: 0 4px 18px rgba(201, 148, 54, 0.35);
+      }
+      50% {
+        box-shadow: 0 6px 26px rgba(201, 148, 54, 0.58), 0 0 16px rgba(245, 214, 136, 0.42);
+      }
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: var(--color-gold-gradient);
+      color: #071711;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.68rem 1.35rem;
+      border-radius: 999px;
+      box-shadow: var(--color-gold-glow);
+      transition: all var(--transition-smooth);
+      white-space: nowrap;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      animation: ctaPulse 4.5s ease-in-out infinite;
+    }
+
+    /* Shimmer Light Sheen Reflection on Hover */
+    .btn-cta::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(60deg, transparent 40%, rgba(255, 255, 255, 0.38) 50%, transparent 60%);
+      transform: translateX(-100%);
+      transition: transform 0.65s ease;
+    }
+
+    .btn-cta:hover::after {
+      transform: translateX(100%);
+    }
+
+    .btn-cta:hover {
+      background: var(--color-gold-gradient-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -2px rgba(201, 148, 54, 0.6);
+      color: #071711;
+    }
+
+    .btn-cta:active {
+      transform: translateY(0);
+    }
+
+    .btn-cta svg {
+      width: 16px;
+      height: 16px;
+      transition: transform var(--transition-instant);
+    }
+
+    .btn-cta:hover svg {
+      transform: translateX(2px);
+    }
+
+    /* Interactive Zen Water Ripple on Button Click */
+    .zen-ripple {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.75) 0%, rgba(201, 148, 54, 0.45) 50%, transparent 100%);
+      transform: scale(0);
+      animation: zenRippleExpand 0.65s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+      z-index: 10;
+    }
+
+    @keyframes zenRippleExpand {
+      0% {
+        transform: scale(0);
+        opacity: 0.85;
+      }
+      100% {
+        transform: scale(3.8);
+        opacity: 0;
+      }
+    }
+
+    /* Mobile Hamburger Trigger with Spring Dynamics */
+    .mobile-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1005;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-subtle);
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mobile-toggle:hover {
+      border-color: var(--color-gold-primary);
+      box-shadow: 0 0 16px rgba(201, 148, 54, 0.32);
+      transform: scale(1.06);
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: var(--color-text-main);
+      border-radius: 2px;
+      transition: transform var(--transition-smooth), opacity var(--transition-smooth), background-color var(--transition-smooth);
+    }
+
+    .mobile-toggle.is-active {
+      background: var(--color-surface-hover);
+      border-color: var(--color-gold-primary);
+      box-shadow: 0 0 18px rgba(201, 148, 54, 0.4);
+    }
+
+    .mobile-toggle.is-active span {
+      background-color: var(--color-gold-primary);
+    }
+
+    .mobile-toggle.is-active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .mobile-toggle.is-active span:nth-child(2) {
+      opacity: 0;
+    }
+    .mobile-toggle.is-active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* ==========================================================================
+       8. RESPONSIVE MOBILE DRAWER (Slide-Over)
+       ========================================================================== */
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 14, 11, 0.65);
+      backdrop-filter: blur(6px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+      z-index: 1001;
+    }
+
+    .mobile-overlay.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 86%;
+      max-width: 380px;
+      background: var(--color-silk);
+      box-shadow: -12px 0 45px rgba(0, 0, 0, 0.25);
+      z-index: 1002;
+      transform: translateX(100%);
+      transition: transform var(--transition-smooth), background-color var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 2rem 1.6rem;
+      border-left: 1px solid var(--color-border);
+    }
+
+    body.dark-mode .mobile-drawer {
+      background: #09120E;
+      border-left: 1px solid rgba(232, 193, 107, 0.15);
+    }
+
+    .mobile-drawer.is-active {
+      transform: translateX(0);
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .drawer-close-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-main);
+      transition: all var(--transition-instant);
+    }
+
+    .drawer-close-btn:hover {
+      background: var(--color-surface-hover);
+      color: var(--color-gold-primary);
+    }
+
+    .mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .mobile-nav-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .mobile-drawer.is-active .mobile-nav-item {
+      animation: drawerItemSlideIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    }
+    .mobile-drawer.is-active .mobile-nav-item:nth-child(1) { animation-delay: 0.08s; }
+    .mobile-drawer.is-active .mobile-nav-item:nth-child(2) { animation-delay: 0.14s; }
+    .mobile-drawer.is-active .mobile-nav-item:nth-child(3) { animation-delay: 0.20s; }
+    .mobile-drawer.is-active .mobile-nav-item:nth-child(4) { animation-delay: 0.26s; }
+
+    @keyframes drawerItemSlideIn {
+      from {
+        opacity: 0;
+        transform: translateX(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .mobile-nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.95rem 0;
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      cursor: pointer;
+      transition: color var(--transition-instant);
+    }
+
+    .mobile-nav-header svg {
+      width: 18px;
+      height: 18px;
+      transition: transform var(--transition-instant);
+      color: var(--color-text-muted);
+    }
+
+    .mobile-nav-item.open .mobile-nav-header svg {
+      transform: rotate(180deg);
+      color: var(--color-gold-primary);
+    }
+
+    .mobile-submenu {
+      display: none;
+      padding: 0 0 1rem 0.8rem;
+    }
+
+    .mobile-nav-item.open .mobile-submenu {
+      display: block;
+    }
+
+    .mobile-sublink {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text-body);
+      border-radius: 8px;
+      transition: all var(--transition-instant);
+    }
+
+    .mobile-sublink:hover {
+      color: var(--color-gold-primary);
+      background-color: var(--color-surface-hover);
+    }
+
+    .mobile-drawer-footer {
+      margin-top: auto;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .drawer-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.84rem;
+      color: var(--color-text-muted);
+    }
+
+    .drawer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .drawer-contact-item svg {
+      width: 16px;
+      height: 16px;
+      color: var(--color-gold-primary);
+    }
+
+    /* Inside Drawer: Circular Theme Switcher + Golden Pill Log In at the Bottom (Ref: media_1790079607491.png) */
+    .drawer-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-top: auto;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .drawer-theme-circle {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-main);
+      cursor: pointer;
+      box-shadow: var(--shadow-subtle);
+      transition: all var(--transition-instant);
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    body.dark-mode .drawer-theme-circle {
+      background: #111B17;
+      border-color: rgba(232, 193, 107, 0.2);
+    }
+
+    .drawer-theme-circle:hover {
+      border-color: var(--color-gold-primary);
+      color: var(--color-gold-primary);
+      transform: scale(1.06);
+    }
+
+    .drawer-theme-circle svg {
+      width: 20px;
+      height: 20px;
+      transition: transform var(--transition-spring);
+    }
+
+    .drawer-theme-circle.switching svg {
+      transform: rotate(360deg);
+    }
+
+    .drawer-login-pill {
+      flex: 1;
+      height: 46px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #F3D079 0%, #C99436 50%, #9D6C1A 100%);
+      border: none;
+      color: #071711;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(201, 148, 54, 0.35);
+      transition: all var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .drawer-login-pill:hover {
+      background: linear-gradient(135deg, #F8DB91 0%, #D4A042 50%, #AC7822 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(201, 148, 54, 0.45);
+    }
+
+    .drawer-login-pill svg {
+      width: 19px;
+      height: 19px;
+      stroke-width: 2.2;
+    }
+
+    /* ==========================================================================
+       9. MEMBER LOGIN MODAL DIALOG
+       ========================================================================== */
+    .login-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 14, 11, 0.72);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+    }
+
+    .login-modal.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 440px;
+      background: var(--color-surface);
+      border-radius: 22px;
+      padding: 2.6rem 2.2rem;
+      box-shadow: var(--shadow-modal);
+      border: 1px solid var(--color-border);
+      position: relative;
+      transform: translateY(-20px) scale(0.97);
+      transition: transform var(--transition-smooth), background-color var(--transition-smooth), border-color var(--transition-smooth);
+    }
+
+    body.dark-mode .login-card {
+      background: #101915;
+      border: 1px solid rgba(232, 193, 107, 0.2);
+    }
+
+    .login-modal.is-active .login-card {
+      transform: translateY(0) scale(1);
+    }
+
+    .login-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      color: var(--color-text-muted);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-surface-hover);
+      transition: all var(--transition-instant);
+    }
+
+    .login-close-btn:hover {
+      color: var(--color-text-main);
+      background: var(--color-border);
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 1.85rem;
+    }
+
+    .login-subtitle {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-weight: 700;
+      color: var(--color-gold-primary);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .login-title {
+      font-family: var(--font-serif);
+      font-size: 1.95rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      line-height: 1.15;
+    }
+
+    .login-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-top: 0.45rem;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      text-align: left;
+    }
+
+    .form-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      letter-spacing: 0.02em;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      background: var(--color-silk);
+      color: var(--color-text-main);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      outline: none;
+      transition: border-color var(--transition-instant), box-shadow var(--transition-instant);
+    }
+
+    .form-input:focus {
+      border-color: var(--color-gold-primary);
+      box-shadow: 0 0 0 3px rgba(201, 148, 54, 0.18);
+    }
+
+    .form-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    .remember-label {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      cursor: pointer;
+    }
+
+    .forgot-link {
+      color: var(--color-gold-primary);
+      font-weight: 500;
+    }
+
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    .login-footer-note {
+      text-align: center;
+      margin-top: 1.25rem;
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    .login-footer-note a {
+      color: var(--color-gold-primary);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       10. RESPONSIVE MEDIA QUERIES (Mobile & Tablet: ONLY Logo & Hamburger in Top Bar)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .header-wrapper {
+        top: 12px;
+        padding: 0 1rem;
+      }
+
+      .header-wrapper.is-scrolled {
+        top: 6px;
+      }
+
+      .navbar {
+        height: 66px;
+        padding: 0 1rem 0 1.25rem;
+      }
+
+      /* Hide Desktop Navigation Menu on Tablet and Mobile */
+      .nav-menu {
+        display: none !important;
+      }
+      
+      /* In Mobile & Tab view: Dark mode and Login button are INSIDE hamburger menu, not in top navbar */
+      .nav-actions .theme-toggle,
+      .nav-actions .btn-login {
+        display: none !important;
+      }
+
+      .nav-actions {
+        display: flex !important;
+        align-items: center;
+        gap: 0;
+      }
+
+      /* Display Hamburger Toggle Button on right */
+      .mobile-toggle {
+        display: flex !important;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .header-wrapper {
+        top: 8px;
+        padding: 0 0.65rem;
+      }
+
+      .navbar {
+        padding: 0 0.75rem 0 1rem;
+        height: 60px;
+      }
+
+      .header-wrapper.is-scrolled .navbar {
+        height: 56px;
+      }
+
+      .brand-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .brand-title {
+        font-size: 1.25rem;
+      }
+
+      .brand-tagline {
+        display: none; /* Hide tagline on narrow phones for clean fit */
+      }
+
+      .nav-actions .theme-toggle,
+      .nav-actions .btn-login {
+        display: none !important;
+      }
+
+      .mobile-toggle {
+        width: 38px;
+        height: 38px;
+        padding: 8px;
+      }
+
+      .mobile-toggle span {
+        width: 18px;
+      }
+    }
+
+    /* ==========================================================================
+       11. ACCESSIBILITY — PREFERS REDUCED MOTION
+       ========================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ==========================================================================
+       12. SLEEK LUXURY WELLNESS FOOTER (Matching media_1790076062019.png)
+       ========================================================================== */
+    .sanctuary-footer {
+      width: 100%;
+      background: #080D0B;
+      color: #FFFFFF;
+      margin-top: 7rem;
+      padding: 5rem 0 2.25rem;
+      border-top: 1px solid rgba(201, 148, 54, 0.22);
+      position: relative;
+    }
+
+    .footer-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr 1fr 1.35fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    /* Column 1: Exact Brand Logo & Socials */
+    .footer-brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.95rem;
+      text-decoration: none;
+      margin-bottom: 1.35rem;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    .footer-brand-icon {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      transition: transform var(--transition-spring), filter var(--transition-smooth);
+      filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.45));
+    }
+
+    .footer-brand-lockup:hover .footer-brand-icon {
+      transform: scale(1.08) translateY(-1px);
+      filter: drop-shadow(0 6px 18px rgba(229, 169, 60, 0.45));
+    }
+
+    .footer-brand-title-text {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: linear-gradient(120deg, 
+        #FFFFFF 0%, 
+        #FFFFFF 35%, 
+        #E5A93C 50%, 
+        #FFFFFF 65%, 
+        #FFFFFF 100%
+      );
+      background-size: 240% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: background-position 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .footer-brand-lockup:hover .footer-brand-title-text {
+      background-position: -120% center;
+    }
+
+    .footer-brand-tagline-text {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: #E5A93C;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+
+    .footer-brand-desc {
+      color: #9EACA4;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      max-width: 320px;
+      margin-bottom: 1.6rem;
+    }
+
+    .footer-social-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .footer-social-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #16221D;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #D1DDD7;
+      transition: all var(--transition-instant);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .footer-social-circle svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .footer-social-circle:hover {
+      background: #E5A93C;
+      color: #080D0B;
+      border-color: #E5A93C;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(229, 169, 60, 0.38);
+    }
+
+    /* Columns 2 & 3: Headings & Navigation Lists */
+    .footer-col-title {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 1.35rem;
+      letter-spacing: 0.01em;
+    }
+
+    .footer-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-nav-list a {
+      color: #9EACA4;
+      font-size: 0.92rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all var(--transition-instant);
+    }
+
+    .footer-nav-list a:hover {
+      color: #E5A93C;
+      transform: translateX(4px);
+    }
+
+    /* Column 4: Contact Us */
+    .footer-contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      font-size: 0.92rem;
+      color: #9EACA4;
+      line-height: 1.55;
+    }
+
+    .contact-icon {
+      width: 18px;
+      height: 18px;
+      color: #E5A93C; /* Warm gold icons matching screenshot */
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .footer-contact-item a {
+      color: #9EACA4;
+      text-decoration: none;
+      transition: color var(--transition-instant);
+    }
+
+    .footer-contact-item a:hover {
+      color: #FFFFFF;
+    }
+
+    /* Bottom Bar */
+    .footer-bottom-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 1.75rem;
+      margin-top: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.84rem;
+      color: #7B8881;
+    }
+
+    .footer-copyright strong {
+      color: #C5D0CB;
+      font-weight: 600;
+    }
+
+    .footer-bottom-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-legal-nav a {
+      color: #7B8881;
+      text-decoration: none;
+      transition: color var(--transition-instant);
+    }
+
+    .footer-legal-nav a:hover {
+      color: #E5A93C;
+    }
+
+    .footer-ascend-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 1rem;
+      background: #16221D;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      color: #C5D0CB;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-instant);
+    }
+
+    .footer-ascend-btn:hover {
+      background: #E5A93C;
+      color: #080D0B;
+      border-color: #E5A93C;
+      transform: translateY(-2px);
+    }
+
+    .footer-ascend-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Responsive Footer */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+      }
+      .sanctuary-footer {
+        padding: 3.5rem 0 2rem;
+        margin-top: 5rem;
+      }
+      .footer-container {
+        padding: 0 1.25rem;
+      }
+      .footer-bottom-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .footer-bottom-right {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .footer-ascend-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  
+
+    /* ==========================================================================
+       FLAGSHIP HOME PAGE STYLES — 6 UNIQUE & CREATIVE SECTIONS
+       ========================================================================== */
+
+    .home-main {
+      position: relative;
+      width: 100%;
+      overflow-x: hidden;
+      padding-top: calc(var(--nav-height, 80px) + 2rem);
+      background-color: var(--color-silk);
+      transition: background-color var(--transition-smooth), color var(--transition-smooth);
+    }
+
+    /* Ambient Section Wrappers & Common Spacing */
+    .home-section {
+      position: relative;
+      padding: 6.5rem 2rem;
+      max-width: 1380px;
+      margin: 0 auto;
+    }
+
+    .home-section-full {
+      position: relative;
+      padding: 7rem 2rem;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .home-section-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-gold-primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-eyebrow::before,
+    .section-eyebrow::after {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: var(--color-gold-primary);
+      opacity: 0.6;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+      line-height: 1.15;
+      font-weight: 500;
+      color: var(--color-emerald-deep);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    body.dark-mode .section-title {
+      color: #F8F6F0;
+    }
+
+    .section-subtitle {
+      font-family: var(--font-sans);
+      font-size: clamp(1rem, 1.3vw, 1.15rem);
+      line-height: 1.7;
+      color: var(--color-text-body);
+      max-width: 720px;
+      margin: 0 auto 3rem auto;
+    }
+
+    body.dark-mode .section-subtitle {
+      color: #B5C9C0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Common Buttons */
+    .btn-gold-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: var(--color-gold-gradient);
+      color: #0A2118 !important;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 1.05rem 2.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: var(--color-gold-glow);
+      transition: all var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+    }
+
+    .btn-gold-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(201, 148, 54, 0.45);
+      filter: brightness(1.06);
+    }
+
+    .btn-outline-glass {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: var(--color-emerald-deep);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 1.05rem 2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--color-border);
+      transition: all var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    body.dark-mode .btn-outline-glass {
+      color: #F8F6F0;
+      background: rgba(16, 25, 21, 0.6);
+      border-color: rgba(232, 193, 107, 0.25);
+    }
+
+    .btn-outline-glass:hover {
+      background: rgba(255, 255, 255, 0.45);
+      border-color: var(--color-gold-primary);
+      transform: translateY(-2px);
+    }
+
+    body.dark-mode .btn-outline-glass:hover {
+      background: rgba(232, 193, 107, 0.15);
+      border-color: var(--color-gold-primary);
+    }
+
+    /* ==========================================================================
+       SECTION 1: THE SANCTUARY GRAND THRESHOLD HERO (#home-hero)
+       ========================================================================== */
+    .hero-portal-wrap {
+      position: relative;
+      border-radius: 36px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 148, 54, 0.35);
+      box-shadow: 0 30px 80px rgba(10, 33, 24, 0.14);
+      background: var(--color-surface);
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-image-box {
+      position: relative;
+      width: 100%;
+      height: 78vh;
+      min-height: 600px;
+      max-height: 820px;
+    }
+
+    .hero-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-portal-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(7, 23, 17, 0.92) 0%,
+        rgba(7, 23, 17, 0.5) 45%,
+        rgba(7, 23, 17, 0.2) 100%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 4rem 4.5rem;
+    }
+
+    .hero-glass-card {
+      max-width: 820px;
+      background: rgba(10, 33, 24, 0.78);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(232, 193, 107, 0.4);
+      padding: 3rem 3.5rem;
+      border-radius: 28px;
+      color: #FFFFFF;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      border-radius: 999px;
+      background: rgba(201, 148, 54, 0.2);
+      border: 1px solid rgba(201, 148, 54, 0.5);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #E8C16B;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-beacon-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ADE80;
+      box-shadow: 0 0 10px #4ADE80;
+      animation: pulse-beacon 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse-beacon {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.35); opacity: 0.6; }
+    }
+
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 4.6vw, 4rem);
+      line-height: 1.1;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-lead-text {
+      font-size: clamp(1rem, 1.25vw, 1.15rem);
+      line-height: 1.7;
+      color: #D6E4DC;
+      margin-bottom: 2rem;
+    }
+
+    .hero-actions-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+
+    /* Circadian Dial Bar */
+    .circadian-horizon-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      padding: 2rem 2.5rem;
+      box-shadow: var(--shadow-subtle);
+      margin-bottom: 2rem;
+      transition: all var(--transition-smooth);
+    }
+
+    body.dark-mode .circadian-horizon-card {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .circadian-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .circadian-title-group h4 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.25rem;
+    }
+
+    body.dark-mode .circadian-title-group h4 {
+      color: #F8F6F0;
+    }
+
+    .circadian-title-group p {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+    }
+
+    .circadian-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      background: rgba(201, 148, 54, 0.12);
+      border: 1px solid rgba(201, 148, 54, 0.35);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-gold-dark);
+    }
+
+    body.dark-mode .circadian-status-pill {
+      color: #ECC369;
+    }
+
+    .circadian-dial-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .circadian-node-btn {
+      background: var(--color-silk);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      color: inherit;
+    }
+
+    body.dark-mode .circadian-node-btn {
+      background: #14201A;
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .circadian-node-btn:hover {
+      border-color: var(--color-gold-primary);
+      transform: translateY(-2px);
+    }
+
+    .circadian-node-btn.is-active {
+      background: linear-gradient(145deg, #123326 0%, #0A2118 100%);
+      border-color: var(--color-gold-primary);
+      color: #FFFFFF;
+      box-shadow: 0 10px 24px rgba(10, 33, 24, 0.25);
+    }
+
+    body.dark-mode .circadian-node-btn.is-active {
+      background: linear-gradient(145deg, #1C382C 0%, #10261D 100%);
+      border-color: #ECC369;
+    }
+
+    .node-time {
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-gold-primary);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .node-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .circadian-node-btn.is-active .node-title {
+      color: #FFFFFF;
+    }
+
+    .node-desc {
+      font-size: 0.8rem;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+
+    /* Live Metrics Ribbon */
+    .metrics-ribbon {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      padding: 2.2rem 2.8rem;
+      border-radius: 22px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    body.dark-mode .metrics-ribbon {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.14);
+    }
+
+    .metric-item {
+      text-align: center;
+      border-right: 1px solid var(--color-border);
+      padding: 0 1rem;
+    }
+
+    .metric-item:last-child {
+      border-right: none;
+    }
+
+    .metric-num {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 600;
+      color: var(--color-emerald-deep);
+      line-height: 1.1;
+      margin-bottom: 0.35rem;
+    }
+
+    body.dark-mode .metric-num {
+      color: #E8C16B;
+    }
+
+    .metric-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       SECTION 2: LIVING LINEAGE & SACRED TRIAD (#home-philosophy)
+       ========================================================================== */
+    .home-triad-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 1fr;
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .triad-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 26px;
+      padding: 3rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-subtle);
+      transition: all var(--transition-smooth);
+    }
+
+    body.dark-mode .triad-card {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .triad-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 45px rgba(10, 33, 24, 0.1);
+      border-color: var(--color-gold-primary);
+    }
+
+    .triad-step-pill {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-gold-primary);
+      padding: 0.35rem 0.9rem;
+      background: rgba(201, 148, 54, 0.1);
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+
+    .triad-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 600;
+      color: var(--color-emerald-deep);
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+
+    body.dark-mode .triad-card-title {
+      color: #F8F6F0;
+    }
+
+    .triad-card-body {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--color-text-body);
+      margin-bottom: 2rem;
+    }
+
+    body.dark-mode .triad-card-body {
+      color: #B5C9C0;
+    }
+
+    .triad-specs-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+    }
+
+    .triad-specs-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--color-text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    body.dark-mode .triad-specs-list li {
+      color: #E2ECE6;
+    }
+
+    .triad-specs-list li svg {
+      width: 18px;
+      height: 18px;
+      color: var(--color-gold-primary);
+      flex-shrink: 0;
+    }
+
+    .triad-card-footer {
+      border-top: 1px solid var(--color-border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .triad-metric-badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-gold-primary);
+    }
+
+    /* Central Focal Triad Card with Image */
+    .triad-centerpiece {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 2px solid var(--color-gold-primary);
+      box-shadow: 0 25px 60px rgba(10, 33, 24, 0.16);
+      display: flex;
+      flex-direction: column;
+      background: #0A2118;
+      color: #FFFFFF;
+    }
+
+    .triad-image-container {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+    }
+
+    .triad-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s ease;
+    }
+
+    .triad-centerpiece:hover .triad-image-container img {
+      transform: scale(1.04);
+    }
+
+    .triad-image-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, #0A2118 0%, rgba(10, 33, 24, 0.25) 50%, rgba(10, 33, 24, 0.45) 100%);
+    }
+
+    .triad-center-content {
+      padding: 2.2rem 2.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      background: #0A2118;
+    }
+
+    .triad-center-content .triad-card-title {
+      color: #FFFFFF;
+      margin-bottom: 0.85rem;
+    }
+
+    .triad-center-content .triad-card-body {
+      color: #D2E4DA;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ==========================================================================
+       SECTION 3: ARCHITECTURAL CAMPUS TOUR (#home-campus)
+       ========================================================================== */
+    .campus-panoramic-card {
+      position: relative;
+      border-radius: 32px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: 0 30px 70px rgba(10, 33, 24, 0.12);
+      margin-bottom: 2.5rem;
+      aspect-ratio: 16 / 8.5;
+      background: #0A2118;
+    }
+
+    .campus-panoramic-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .campus-panoramic-hud {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      right: 2rem;
+      padding: 1.8rem 2.5rem;
+      border-radius: 20px;
+      background: rgba(10, 33, 24, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(201, 148, 54, 0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #FFFFFF;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .campus-hud-left h4 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: #FFFFFF;
+      margin-bottom: 0.3rem;
+    }
+
+    .campus-hud-left p {
+      font-size: 0.88rem;
+      color: #C8DBD1;
+    }
+
+    .campus-hud-stats {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hud-stat-item {
+      text-align: right;
+    }
+
+    .hud-stat-val {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #E8C16B;
+    }
+
+    .hud-stat-lbl {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9AB4A6;
+    }
+
+    /* 4 Inspection Lenses */
+    .campus-lenses-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .campus-lens-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 2rem 1.75rem;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      position: relative;
+    }
+
+    body.dark-mode .campus-lens-card {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .campus-lens-card:hover {
+      border-color: var(--color-gold-primary);
+      transform: translateY(-3px);
+    }
+
+    .campus-lens-card.is-active {
+      border-color: var(--color-gold-primary);
+      box-shadow: 0 16px 36px rgba(201, 148, 54, 0.18);
+      background: linear-gradient(180deg, var(--color-surface) 0%, rgba(201, 148, 54, 0.05) 100%);
+    }
+
+    .lens-number {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      color: var(--color-gold-primary);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .lens-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+
+    body.dark-mode .lens-title {
+      color: #F8F6F0;
+    }
+
+    .lens-desc {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--color-text-body);
+      margin-bottom: 1.25rem;
+    }
+
+    body.dark-mode .lens-desc {
+      color: #B5C9C0;
+    }
+
+    .lens-spec-pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-emerald-deep);
+      background: var(--color-silk);
+      padding: 0.4rem 0.85rem;
+      border-radius: 8px;
+      display: inline-block;
+      border: 1px solid var(--color-border);
+    }
+
+    body.dark-mode .lens-spec-pill {
+      color: #ECC369;
+      background: #14201A;
+      border-color: rgba(255, 255, 255, 0.06);
+    }
+
+    /* ==========================================================================
+       SECTION 4: DAILY PRACTICE SCHEDULE & NAVIGATOR (#home-schedule)
+       ========================================================================== */
+    .home-schedule-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 1.85fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .schedule-feature-box {
+      position: sticky;
+      top: 100px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    body.dark-mode .schedule-feature-box {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .schedule-img-wrap {
+      position: relative;
+      height: 360px;
+    }
+
+    .schedule-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .schedule-img-badge {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      background: rgba(10, 33, 24, 0.85);
+      backdrop-filter: blur(12px);
+      color: #E8C16B;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      border: 1px solid rgba(232, 193, 107, 0.4);
+    }
+
+    .schedule-feature-body {
+      padding: 2.2rem 2.4rem;
+    }
+
+    .schedule-feature-body h3 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.75rem;
+    }
+
+    body.dark-mode .schedule-feature-body h3 {
+      color: #F8F6F0;
+    }
+
+    .schedule-feature-body p {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--color-text-body);
+      margin-bottom: 1.75rem;
+    }
+
+    body.dark-mode .schedule-feature-body p {
+      color: #B5C9C0;
+    }
+
+    /* Filter Tabs */
+    .schedule-filter-bar {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .schedule-tab-btn {
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-body);
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+    }
+
+    body.dark-mode .schedule-tab-btn {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+      color: #B5C9C0;
+    }
+
+    .schedule-tab-btn:hover {
+      border-color: var(--color-gold-primary);
+      color: var(--color-gold-primary);
+    }
+
+    .schedule-tab-btn.is-active {
+      background: linear-gradient(135deg, #ECC369, #C99436);
+      color: #0A2118 !important;
+      font-weight: 700;
+      border-color: transparent;
+      box-shadow: 0 6px 18px rgba(201, 148, 54, 0.35);
+    }
+
+    .schedule-cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .schedule-class-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      display: grid;
+      grid-template-columns: 140px 1fr auto;
+      gap: 1.75rem;
+      align-items: center;
+      transition: all var(--transition-smooth);
+    }
+
+    body.dark-mode .schedule-class-card {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .schedule-class-card:hover {
+      border-color: var(--color-gold-primary);
+      box-shadow: 0 10px 30px rgba(10, 33, 24, 0.08);
+      transform: translateX(4px);
+    }
+
+    .class-time-slot {
+      border-right: 1px solid var(--color-border);
+      padding-right: 1rem;
+    }
+
+    .class-time {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--color-emerald-deep);
+      line-height: 1.1;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    body.dark-mode .class-time {
+      color: #E8C16B;
+    }
+
+    .class-duration {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+    }
+
+    .class-info h4 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.35rem;
+    }
+
+    body.dark-mode .class-info h4 {
+      color: #F8F6F0;
+    }
+
+    .class-instructor {
+      font-size: 0.85rem;
+      color: var(--color-gold-primary);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .class-desc {
+      font-size: 0.88rem;
+      color: var(--color-text-body);
+      line-height: 1.5;
+    }
+
+    body.dark-mode .class-desc {
+      color: #B5C9C0;
+    }
+
+    .class-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      background: var(--color-silk);
+      color: var(--color-emerald-deep);
+      border: 1px solid var(--color-border);
+      transition: all var(--transition-smooth);
+      white-space: nowrap;
+    }
+
+    body.dark-mode .class-action-btn {
+      background: #14201A;
+      color: #E8C16B;
+      border-color: rgba(232, 193, 107, 0.25);
+    }
+
+    .class-action-btn:hover {
+      background: var(--color-gold-primary);
+      color: #0A2118 !important;
+      border-color: var(--color-gold-primary);
+    }
+
+    /* ==========================================================================
+       SECTION 5: VOICES OF THE TRANSFORMED (#home-testimonials)
+       ========================================================================== */
+    .home-testimonials-wrap {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .testimonials-slider-box {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 30px;
+      padding: 3.5rem 3.2rem;
+      box-shadow: var(--shadow-subtle);
+      position: relative;
+    }
+
+    body.dark-mode .testimonials-slider-box {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 0.35rem;
+      color: #C99436;
+      margin-bottom: 1.75rem;
+    }
+
+    .testimonial-stars svg {
+      width: 20px;
+      height: 20px;
+      fill: #C99436;
+    }
+
+    .testimonial-quote-text {
+      font-family: var(--font-serif);
+      font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+      line-height: 1.5;
+      color: var(--color-emerald-deep);
+      font-style: italic;
+      margin-bottom: 2.25rem;
+      min-height: 140px;
+    }
+
+    body.dark-mode .testimonial-quote-text {
+      color: #F8F6F0;
+    }
+
+    .testimonial-author-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--color-border);
+      padding-top: 1.75rem;
+    }
+
+    .author-info h5 {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.2rem;
+    }
+
+    body.dark-mode .author-info h5 {
+      color: #F8F6F0;
+    }
+
+    .author-info span {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .testimonial-controls {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .t-arrow-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border);
+      background: var(--color-silk);
+      color: var(--color-emerald-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+    }
+
+    body.dark-mode .t-arrow-btn {
+      background: #14201A;
+      border-color: rgba(232, 193, 107, 0.25);
+      color: #E8C16B;
+    }
+
+    .t-arrow-btn:hover {
+      background: var(--color-gold-primary);
+      color: #0A2118;
+      border-color: var(--color-gold-primary);
+    }
+
+    .testimonial-ambient-frame {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(201, 148, 54, 0.4);
+      box-shadow: 0 24px 60px rgba(10, 33, 24, 0.15);
+      aspect-ratio: 4 / 3.3;
+    }
+
+    .testimonial-ambient-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .testimonial-ambient-badge {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      right: 2rem;
+      padding: 1.5rem 1.8rem;
+      border-radius: 20px;
+      background: rgba(10, 33, 24, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(201, 148, 54, 0.45);
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ambient-badge-score {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #E8C16B;
+      line-height: 1;
+    }
+
+    .ambient-badge-text {
+      font-size: 0.84rem;
+      color: #CFE0D7;
+      line-height: 1.4;
+      max-width: 200px;
+    }
+
+    /* ==========================================================================
+       SECTION 6: GRAND INVITATION & MASTER GATEWAY PASS (#home-invitation)
+       ========================================================================== */
+    .gateway-monumental-canvas {
+      position: relative;
+      border-radius: 36px;
+      overflow: hidden;
+      border: 2px solid rgba(201, 148, 54, 0.4);
+      box-shadow: 0 35px 85px rgba(0, 0, 0, 0.35);
+      background: #0A2118;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4.5rem 2rem;
+    }
+
+    .gateway-backdrop-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.38;
+      filter: saturate(1.2) brightness(0.75);
+    }
+
+    .gateway-scrim-radial {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle at center,
+        rgba(10, 33, 24, 0.72) 0%,
+        rgba(7, 23, 17, 0.95) 100%
+      );
+    }
+
+    .master-pass-card {
+      position: relative;
+      z-index: 3;
+      max-width: 900px;
+      width: 100%;
+      background: rgba(13, 38, 29, 0.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(232, 193, 107, 0.5);
+      border-radius: 30px;
+      padding: 3.5rem 4rem;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .pass-top-seal {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.45rem 1.4rem;
+      border-radius: 999px;
+      background: rgba(201, 148, 54, 0.18);
+      border: 1px solid rgba(201, 148, 54, 0.6);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #E8C16B;
+      margin-bottom: 1.5rem;
+    }
+
+    .pass-monument-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 4.4vw, 3.8rem);
+      line-height: 1.15;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+
+    .pass-price-banner {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .pass-currency {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: #E8C16B;
+      line-height: 1;
+    }
+
+    .pass-orig-val {
+      font-size: 1.1rem;
+      color: #8CAEA0;
+      text-decoration: line-through;
+    }
+
+    .pass-features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem 2rem;
+      text-align: left;
+      margin: 2.5rem 0 3rem 0;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(232, 193, 107, 0.25);
+      border-bottom: 1px solid rgba(232, 193, 107, 0.25);
+    }
+
+    .pass-feat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-size: 0.92rem;
+      color: #E2ECE6;
+    }
+
+    .pass-feat-item svg {
+      width: 20px;
+      height: 20px;
+      color: #E8C16B;
+      flex-shrink: 0;
+    }
+
+    .pass-buttons-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .pass-guarantee-note {
+      font-size: 0.82rem;
+      color: #9AB4A6;
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS (TABLET & MOBILE)
+       ========================================================================== */
+    @media (max-width: 1080px) {
+      .home-triad-grid {
+        grid-template-columns: 1fr;
+      }
+      .campus-lenses-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .home-schedule-layout {
+        grid-template-columns: 1fr;
+      }
+      .schedule-feature-box {
+        position: static;
+      }
+      .home-testimonials-wrap {
+        grid-template-columns: 1fr;
+      }
+      .circadian-dial-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .metrics-ribbon {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .metric-item:nth-child(2) {
+        border-right: none;
+      }
+      .metric-item:nth-child(3),
+      .metric-item:nth-child(4) {
+        border-top: 1px solid var(--color-border);
+        padding-top: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .home-section {
+        padding: 4.5rem 1.25rem;
+      }
+      .home-section-full {
+        padding: 4.5rem 1.25rem;
+      }
+      .hero-image-box {
+        height: 65vh;
+        min-height: 480px;
+      }
+      .hero-portal-overlay {
+        padding: 2rem 1.5rem;
+      }
+      .hero-glass-card {
+        padding: 2rem 1.75rem;
+        border-radius: 20px;
+      }
+      .circadian-horizon-card {
+        padding: 1.5rem;
+      }
+      .circadian-dial-grid {
+        grid-template-columns: 1fr;
+      }
+      .metrics-ribbon {
+        grid-template-columns: 1fr;
+        padding: 1.75rem 1.25rem;
+      }
+      .metric-item {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        padding: 1rem 0;
+      }
+      .metric-item:last-child {
+        border-bottom: none;
+      }
+      .campus-lenses-grid {
+        grid-template-columns: 1fr;
+      }
+      .schedule-class-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .class-time-slot {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: 0.75rem;
+      }
+      .pass-features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .master-pass-card {
+        padding: 2.25rem 1.5rem;
+      }
+      .campus-panoramic-hud {
+        position: static;
+        border-radius: 0;
+        border: none;
+        background: #0A2118;
+      }
+      .campus-panoramic-card {
+        border-radius: 20px;
+        aspect-ratio: auto;
+        height: auto;
+      }
+      .campus-panoramic-card img {
+        height: 280px;
+      }
+    }
+
+</style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       FLOATING ZEN CAPSULE NAVIGATION BAR
+       ========================================================================== -->
+  <header class="header-wrapper" id="headerWrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand" aria-label="Prana & Sage Sanctuary Home">
+        <!-- Sacred Lotus + Chandra Moon + Crown Aura Emblem in Emerald & Champagne Gold -->
+        <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Yoga Sanctuary Emblem">
+          <defs>
+            <linearGradient id="yogaGoldGrad" x1="16" y1="10" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F5D688"/>
+              <stop offset="50%" stop-color="#C99436"/>
+              <stop offset="100%" stop-color="#9A6C1C"/>
+            </linearGradient>
+            <linearGradient id="yogaEmeraldGrad" x1="20" y1="10" x2="44" y2="50" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#2D604C"/>
+              <stop offset="100%" stop-color="#0A2118"/>
+            </linearGradient>
+            <radialGradient id="yogaAuraGrad" cx="32" cy="32" r="30" gradientUnits="userSpaceOnUse">
+              <stop offset="60%" stop-color="#FAF7F2"/>
+              <stop offset="100%" stop-color="#ECE3D2" stop-opacity="0.75"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Sacred Aura Medallion -->
+          <circle cx="32" cy="32" r="30" fill="url(#yogaAuraGrad)" class="mandala-bg"/>
+          <circle cx="32" cy="32" r="30" stroke="url(#yogaGoldGrad)" stroke-width="1.2" stroke-dasharray="2.5 3.5" opacity="0.8" class="mandala-outer-ring"/>
+          <circle cx="32" cy="32" r="27.5" stroke="#DCD3C3" stroke-width="0.75" class="mandala-inner-ring"/>
+
+          <!-- Chandra Moon (Lunar Restorative Balance) -->
+          <path class="chandra-moon" d="M43 21C41 33 32 42 19 40C27 44 38 43 43 35C45.5 31 45.5 26 43 21Z" 
+                fill="url(#yogaGoldGrad)" opacity="0.3"/>
+
+          <!-- Ascending Sacred Lotus Petals (Flowing Prāna Energy) -->
+          <path class="lotus-petal petal-left-outer" d="M32 38C22 37 13 29 15 18C21 19 28 27 32 38Z" 
+                fill="url(#yogaGoldGrad)" fill-opacity="0.95"/>
+          <path class="lotus-petal petal-right-outer" d="M32 38C42 37 51 29 49 18C43 19 36 27 32 38Z" 
+                fill="url(#yogaGoldGrad)" fill-opacity="0.95"/>
+          <path class="lotus-petal petal-left-inner" d="M32 40C25 34 22 24 25 15C29 21 31 29 32 40Z" 
+                fill="url(#yogaEmeraldGrad)" fill-opacity="0.9"/>
+          <path class="lotus-petal petal-right-inner" d="M32 40C39 34 42 24 39 15C35 21 33 29 32 40Z" 
+                fill="url(#yogaEmeraldGrad)" fill-opacity="0.9"/>
+
+          <!-- Meditating Yogi Figure in Lotus Pose with Anjali Mudra -->
+          <path class="yogi-base" d="M20 44.5C23 40.5 27 39 32 39C37 39 41 40.5 44 44.5C42 47.5 38 48.5 32 48.5C26 48.5 22 47.5 20 44.5Z" 
+                fill="url(#yogaEmeraldGrad)"/>
+          <path class="yogi-torso" d="M32 25C29.5 27.5 28.5 30 29 34C30.5 35 33.5 35 35 34C35.5 30 34.5 27.5 32 25Z" 
+                fill="url(#yogaEmeraldGrad)"/>
+          <circle class="yogi-head" cx="32" cy="21" r="3.2" fill="url(#yogaEmeraldGrad)"/>
+
+          <!-- Illuminated Crown Chakra Flame & Golden Bindu -->
+          <circle class="crown-bindu" cx="32" cy="14" r="2.2" fill="url(#yogaGoldGrad)"/>
+          <path class="crown-flame" d="M32 8.5C30.8 10.5 30.8 12.2 32 13.5C33.2 12.2 33.2 10.5 32 8.5Z" fill="url(#yogaGoldGrad)"/>
+
+          <!-- Grounding Ripples -->
+          <path class="grounding-ripple ripple-1" d="M22 52C26 54 38 54 42 52" stroke="url(#yogaGoldGrad)" stroke-width="1.6" stroke-linecap="round"/>
+          <path class="grounding-ripple ripple-2" d="M26 55.5C28.5 56.8 35.5 56.8 38 55.5" stroke="url(#yogaEmeraldGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">Prana & Sage</span>
+          <span class="brand-tagline">Yoga & Wellness Sanctuary</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links with Magnetic Satin Pill Slider -->
+      <ul class="nav-menu" id="navMenu">
+        <!-- Dynamic Floating Satin Pill Indicator -->
+        <div class="nav-slider-pill" id="navSliderPill" aria-hidden="true"></div>
+        
+        <!-- 1. Home with Luxury Rich Dropdown (Active on this page) -->
+        <li class="nav-item">
+          <a href="index.html" class="nav-link is-active">Home</a>
+        </li>
+
+        <!-- 2. About -->
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+
+        <!-- 3. Gallery -->
+        <li class="nav-item">
+          <a href="gallery.html" class="nav-link">Gallery</a>
+        </li>
+
+        <!-- 4. Service -->
+        <li class="nav-item">
+          <a href="service.html" class="nav-link">Service</a>
+        </li>
+
+        <!-- 5. Contact -->
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- Action Area: Pro Theme Toggle, Gold CTA Button, Mobile Hamburger -->
+      <div class="nav-actions">
+        
+        <!-- Dark Mode Toggle Button (Hidden in Tab & Mobile) -->
+        <button class="action-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+          <!-- Moon Icon (Active in Light Mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Active in Dark Mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Member Login Button (Champagne Gold Shimmer CTA, Hidden in Tab & Mobile) -->
+        <button class="btn-cta btn-login" id="loginBtn" aria-label="Member Login" onclick="window.location.href='login.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Log In</span>
+        </button>
+
+        <!-- Mobile Hamburger Trigger (ONLY item visible on Right in Tab & Mobile) -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation drawer" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="home-main" id="mainContent">
+
+    <!-- ==========================================================================
+         SECTION 1: THE SANCTUARY GRAND THRESHOLD HERO (#home-hero)
+         ========================================================================== -->
+    <section class="home-section" id="home-hero" aria-label="Sanctuary Grand Threshold">
+      
+      <!-- Architectural Portal Frame -->
+      <div class="hero-portal-wrap">
+        <div class="hero-image-box">
+          <img src="images/home_hero_threshold.jpg" alt="Monumental luxury wellness sanctuary grand threshold entrance with warm honey travertine stone and Sedona canyon spires" width="1920" height="1080" loading="eager">
+          <div class="hero-portal-overlay">
+            <div class="hero-glass-card">
+              <div class="hero-badge-tag">
+                <span class="hero-beacon-dot"></span>
+                <span>Sedona High-Desert Sanctuary • Established 2018</span>
+              </div>
+              <h1 class="hero-headline">Where Ancient Wisdom Meets High-Desert Stillness</h1>
+              <p class="hero-lead-text">
+                Sculpted from honey travertine stone and native cedar wood, Prana &amp; Sage is an architectural sanctuary designed to awaken vitality through mindful movement, subterranean sound alchemy, and cellular hydrothermal contrast.
+              </p>
+              <div class="hero-actions-row">
+                <a href="#home-philosophy" class="btn-gold-primary">
+                  <span>Enter Sanctuary Experience</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="#home-schedule" class="btn-outline-glass">
+                  <span>Explore Daily Schedule</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Circadian Horizon Dial -->
+      <div class="circadian-horizon-card">
+        <div class="circadian-header">
+          <div class="circadian-title-group">
+            <h4>Live Circadian Horizon Dial</h4>
+            <p>Select a sanctuary interval to synchronize your practice with high-desert solar rhythms</p>
+          </div>
+          <div class="circadian-status-pill" id="circadianLivePill">
+            <span class="hero-beacon-dot"></span>
+            <span id="circadianLiveStatus">Dawn Interval Active: Solar Vitality Sadhana</span>
+          </div>
+        </div>
+        <div class="circadian-dial-grid" id="circadianDialGrid">
+          <button class="circadian-node-btn is-active" data-dial="dawn" aria-label="Dawn Solstice interval">
+            <span class="node-time">06:00 - 09:30</span>
+            <div class="node-title">Dawn Solstice</div>
+            <div class="node-desc">Solar Vitality Sadhana &amp; Vinyasa Krama</div>
+          </button>
+          <button class="circadian-node-btn" data-dial="noon" aria-label="Solar Noon interval">
+            <span class="node-time">11:00 - 14:30</span>
+            <div class="node-title">Solar Noon</div>
+            <div class="node-desc">Neuro-Prana Recalibration &amp; Hydrothermal</div>
+          </button>
+          <button class="circadian-node-btn" data-dial="sunset" aria-label="Sunset Sedona Glow interval">
+            <span class="node-time">16:30 - 19:00</span>
+            <div class="node-title">Sedona Sunset Glow</div>
+            <div class="node-desc">Restorative Yin &amp; Canyon Fascial Unwinding</div>
+          </button>
+          <button class="circadian-node-btn" data-dial="twilight" aria-label="Twilight Chandra interval">
+            <span class="node-time">19:30 - 22:00</span>
+            <div class="node-title">Twilight Chandra</div>
+            <div class="node-desc">Subterranean 432 Hz Halite Sound Bath</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Sanctuary Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-item">
+          <div class="metric-num">14,800+</div>
+          <div class="metric-label">Seekers Transformed</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-num">432 Hz</div>
+          <div class="metric-label">Acoustic Quartz Tuning</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-num">100%</div>
+          <div class="metric-label">Zero-EMF Shala Sanctums</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-num">7.4 pH</div>
+          <div class="metric-label">Pure Mountain Mineral Water</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: LIVING LINEAGE & SACRED TRIAD (#home-philosophy)
+         ========================================================================== -->
+    <section class="home-section" id="home-philosophy" aria-label="The Living Lineage & Triad">
+      <div class="text-center">
+        <span class="section-eyebrow">The Triad of Living Restoration</span>
+        <h2 class="section-title">Rooted in Ancient Lineage, Refined for Modern Vitality</h2>
+        <p class="section-subtitle">
+          Our sanctuary integrates three foundational modalities into a continuous daily rhythm, harmonizing the physical vessel, energetic pathways, and cellular vitality.
+        </p>
+      </div>
+
+      <div class="home-triad-grid">
+        <!-- Pillar 1: Somatic Movement -->
+        <div class="triad-card">
+          <div>
+            <span class="triad-step-pill">Physical Pillar 01</span>
+            <h3 class="triad-card-title">Somatic Movement &amp; Dynamic Alignment</h3>
+            <p class="triad-card-body">
+              Classical Hatha, Vinyasa Krama, and fascial decompressions guided by lineage instructors with over twenty years of discipline.
+            </p>
+            <ul class="triad-specs-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Biomechanical Posture Calibration</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Radiant Underfloor Cedar Wood Floors</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Breath-Synchronized Movement Sequences</span>
+              </li>
+            </ul>
+          </div>
+          <div class="triad-card-footer">
+            <span class="triad-metric-badge">75 &amp; 90-Min Sessions</span>
+            <a href="service.html" class="class-action-btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Central Focal Image Card -->
+        <div class="triad-centerpiece">
+          <div class="triad-image-container">
+            <img src="images/home_triad_philosophy.jpg" alt="Serene practitioner in organic linen sitting in peaceful meditation inside a sunlit wooden temple" width="800" height="600" loading="lazy">
+            <div class="triad-image-scrim"></div>
+          </div>
+          <div class="triad-center-content">
+            <div>
+              <span class="triad-step-pill" style="background: rgba(232, 193, 107, 0.2); color: #ECC369; border: 1px solid rgba(232, 193, 107, 0.4);">Acoustic Pillar 02</span>
+              <h3 class="triad-card-title">Subterranean Acoustic Resonance</h3>
+              <p class="triad-card-body">
+                Step forty feet below ground into a halite chamber tuned to 432 Hz. Pure quartz crystal bowls and overtone gongs recalibrate your nervous system into deep theta states.
+              </p>
+            </div>
+            <div class="triad-card-footer" style="border-top-color: rgba(232, 193, 107, 0.25);">
+              <span class="triad-metric-badge" style="color: #ECC369;">432 Hz Solfeggio Scale</span>
+              <a href="service.html" class="btn-gold-primary" style="padding: 0.65rem 1.4rem; font-size: 0.85rem;">Explore Dome</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Hydrothermal Contrast -->
+        <div class="triad-card">
+          <div>
+            <span class="triad-step-pill">Cellular Pillar 03</span>
+            <h3 class="triad-card-title">Cellular Hydrothermal Contrast</h3>
+            <p class="triad-card-body">
+              Thermal basalt mineral springs paired with ice immersion and wild-harvested desert botanical compresses for profound lymphatic drainage.
+            </p>
+            <ul class="triad-specs-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>104°F Sedona Basalt Mineral Pools</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>48°F Cold Spring Immersion Plunge</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Wild Desert Sage Herbal Compresses</span>
+              </li>
+            </ul>
+          </div>
+          <div class="triad-card-footer">
+            <span class="triad-metric-badge">Thermal Contrast Circuit</span>
+            <a href="service.html" class="class-action-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: ARCHITECTURAL CAMPUS TOUR (#home-campus)
+         ========================================================================== -->
+    <section class="home-section" id="home-campus" aria-label="Campus Architectural Tour">
+      <div class="text-center">
+        <span class="section-eyebrow">Biophilic High-Desert Architecture</span>
+        <h2 class="section-title">Sculpted From Rammed Earth, Honey Travertine &amp; Cedar</h2>
+        <p class="section-subtitle">
+          Nestled within the sacred red rock canyon spires of Sedona, every pavilion is oriented toward solar solstices and natural geomagnetic ley lines.
+        </p>
+      </div>
+
+      <!-- Panoramic Grounds Card -->
+      <div class="campus-panoramic-card">
+        <img src="images/home_campus_grounds.jpg" alt="Panoramic aerial view of luxury biophilic yoga sanctuary campus nestled in Sedona red rock canyons with green living roofs" width="1920" height="1080" loading="lazy">
+        <div class="campus-panoramic-hud">
+          <div class="campus-hud-left">
+            <h4 id="hudCampusTitle">The Solstice Shala &amp; Grounds</h4>
+            <p id="hudCampusDesc">Curved rammed-earth pavilions with sedum living green roofs and reflection pools</p>
+          </div>
+          <div class="campus-hud-stats">
+            <div class="hud-stat-item">
+              <div class="hud-stat-val" id="hudStatElevation">4,500 FT</div>
+              <div class="hud-stat-lbl">Elevation</div>
+            </div>
+            <div class="hud-stat-item">
+              <div class="hud-stat-val" id="hudStatAcoustics">99.8%</div>
+              <div class="hud-stat-lbl">Purity Index</div>
+            </div>
+            <div class="hud-stat-item">
+              <div class="hud-stat-val" id="hudStatOrientation">180° S</div>
+              <div class="hud-stat-lbl">Solar Axis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Inspection Lenses Grid -->
+      <div class="campus-lenses-grid" id="campusLensesGrid">
+        <div class="campus-lens-card is-active" data-lens="shala">
+          <span class="lens-number">PAVILION 01</span>
+          <h4 class="lens-title">The Solstice Movement Shala</h4>
+          <p class="lens-desc">
+            Expansive 3,200 sq ft hall with radiant underfloor cedar and frameless glass walls facing Cathedral Rock.
+          </p>
+          <span class="lens-spec-pill">Capacity: 40 Practitioners</span>
+        </div>
+
+        <div class="campus-lens-card" data-lens="sound">
+          <span class="lens-number">PAVILION 02</span>
+          <h4 class="lens-title">The Nada Halite Sound Dome</h4>
+          <p class="lens-desc">
+            Subterranean geodesic chamber lined with 40,000 lbs of raw Himalayan salt and zero-EMF Faraday shielding.
+          </p>
+          <span class="lens-spec-pill">Acoustics: 1.4s Decay Time</span>
+        </div>
+
+        <div class="campus-lens-card" data-lens="baths">
+          <span class="lens-number">PAVILION 03</span>
+          <h4 class="lens-title">The Basalt Hydrothermal Baths</h4>
+          <p class="lens-desc">
+            Contrast mineral hot springs carved directly into natural travertine, accompanied by Finnish dry sauna.
+          </p>
+          <span class="lens-spec-pill">Temperature: 104°F / 48°F</span>
+        </div>
+
+        <div class="campus-lens-card" data-lens="tea">
+          <span class="lens-number">PAVILION 04</span>
+          <h4 class="lens-title">The Apothecary Tea Atrium</h4>
+          <p class="lens-desc">
+            Open-air courtyard with a central travertine fireplace serving 42 hand-harvested desert herbal infusions.
+          </p>
+          <span class="lens-spec-pill">Herbal Formulary: Organic</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: DAILY PRACTICE SCHEDULE & NAVIGATOR (#home-schedule)
+         ========================================================================== -->
+    <section class="home-section" id="home-schedule" aria-label="Daily Practice Schedule">
+      <div class="text-center">
+        <span class="section-eyebrow">Circadian Daily Schedule</span>
+        <h2 class="section-title">Align Your Breath With The Sun</h2>
+        <p class="section-subtitle">
+          Experience authentic practices structured around natural circadian phases. Preview today's shala gatherings and reserve your space.
+        </p>
+      </div>
+
+      <div class="home-schedule-layout">
+        <!-- Left Column: Sticky Practice Highlight Box -->
+        <div class="schedule-feature-box">
+          <div class="schedule-img-wrap">
+            <img src="images/home_daily_practice.jpg" alt="Mindful group practice moving in unison in sunlit wooden shala with high exposed timber beams" width="800" height="600" loading="lazy">
+            <span class="schedule-img-badge">Next Gathering • 05:30 PM</span>
+          </div>
+          <div class="schedule-feature-body">
+            <h3>Restorative Yin &amp; Halite Sound</h3>
+            <p>
+              A slow-paced evening practice targeting deep connective tissues and fascia, followed by crystal bowl sound healing inside the Solstice Shala.
+            </p>
+            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+              <span class="lens-spec-pill">Lead: Sarah Sterling</span>
+              <span class="lens-spec-pill">Level: All Practitioners</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Schedule Filter and Cards -->
+        <div>
+          <div class="schedule-filter-bar" id="scheduleFilterBar">
+            <button class="schedule-tab-btn is-active" data-filter="all">All Gatherings (6)</button>
+            <button class="schedule-tab-btn" data-filter="dawn">Dawn (6:00 - 9:30 AM)</button>
+            <button class="schedule-tab-btn" data-filter="noon">Solar Noon (12:00 - 2:00 PM)</button>
+            <button class="schedule-tab-btn" data-filter="twilight">Twilight (5:30 - 7:30 PM)</button>
+          </div>
+
+          <div class="schedule-cards-list" id="scheduleCardsList">
+            <!-- Card 1 -->
+            <div class="schedule-class-card" data-time="dawn">
+              <div class="class-time-slot">
+                <span class="class-time">06:00 AM</span>
+                <span class="class-duration">75 Minutes</span>
+              </div>
+              <div class="class-info">
+                <h4>Dawn Prana Sadhana</h4>
+                <div class="class-instructor">Led by Master Tara Vance • The Solstice Shala</div>
+                <div class="class-desc">Dynamic solar breathwork, sunrise salutations, and mindful standing postures to awaken cellular vitality.</div>
+              </div>
+              <div>
+                <a href="contact.html" class="class-action-btn">Reserve Mat</a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="schedule-class-card" data-time="dawn">
+              <div class="class-time-slot">
+                <span class="class-time">08:30 AM</span>
+                <span class="class-duration">90 Minutes</span>
+              </div>
+              <div class="class-info">
+                <h4>Classical Alignment Hatha</h4>
+                <div class="class-instructor">Led by Julian Mercer • The Solstice Shala</div>
+                <div class="class-desc">Precision biomechanics, long-held foundational asanas, and internal energy lock activations.</div>
+              </div>
+              <div>
+                <a href="contact.html" class="class-action-btn">Reserve Mat</a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="schedule-class-card" data-time="noon">
+              <div class="class-time-slot">
+                <span class="class-time">12:00 PM</span>
+                <span class="class-duration">60 Minutes</span>
+              </div>
+              <div class="class-info">
+                <h4>Neuro-Somatic Vagus Reset</h4>
+                <div class="class-instructor">Led by Dr. Maya Lin • The Nada Dome</div>
+                <div class="class-desc">Gentle parasympathetic nervous system down-regulation, gentle vocal toning, and lymphatic unwinding.</div>
+              </div>
+              <div>
+                <a href="contact.html" class="class-action-btn">Reserve Mat</a>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="schedule-class-card" data-time="noon">
+              <div class="class-time-slot">
+                <span class="class-time">02:00 PM</span>
+                <span class="class-duration">45 Minutes</span>
+              </div>
+              <div class="class-info">
+                <h4>Hydrothermal Contrast Breathwork</h4>
+                <div class="class-instructor">Led by Marcus Cole • The Basalt Baths</div>
+                <div class="class-desc">Structured diaphragmatic breathing techniques paired with guided hot-to-cold immersion transitions.</div>
+              </div>
+              <div>
+                <a href="contact.html" class="class-action-btn">Reserve Mat</a>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="schedule-class-card" data-time="twilight">
+              <div class="class-time-slot">
+                <span class="class-time">05:30 PM</span>
+                <span class="class-duration">75 Minutes</span>
+              </div>
+              <div class="class-info">
+                <h4>Restorative Yin &amp; Halite Sound</h4>
+                <div class="class-instructor">Led by Sarah Sterling • The Solstice Shala</div>
+                <div class="class-desc">Floor-grounded postures held for 4 to 6 minutes to release fascial tension, ending in quartz bowl sound waves.</div>
+              </div>
+              <div>
+                <a href="contact.html" class="class-action-btn">Reserve Mat</a>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="schedule-class-card" data-time="twilight">
+              <div class="class-time-slot">
+                <span class="class-time">07:30 PM</span>
+                <span class="class-duration">60 Minutes</span>
+              </div>
+              <div class="class-info">
+                <h4>Chandra Halite Sound Sanctuary</h4>
+                <div class="class-instructor">Led by Tara Vance • The Nada Dome</div>
+                <div class="class-desc">Subterranean 432 Hz vibrational bath surrounded by 40,000 lbs of backlit pink salt crystals.</div>
+              </div>
+              <div>
+                <a href="contact.html" class="class-action-btn">Reserve Mat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: VOICES OF THE TRANSFORMED (#home-testimonials)
+         ========================================================================== -->
+    <section class="home-section" id="home-testimonials" aria-label="Sabbatical Testimonials">
+      <div class="text-center">
+        <span class="section-eyebrow">Guest Sabbatical Reflections</span>
+        <h2 class="section-title">Voices of the Transformed</h2>
+        <p class="section-subtitle">
+          Discover how seekers, healthcare leaders, and artists experience deep restoration through our high-desert immersion.
+        </p>
+      </div>
+
+      <div class="home-testimonials-wrap">
+        <!-- Interactive Testimonial Slider Box -->
+        <div class="testimonials-slider-box">
+          <div class="testimonial-stars" aria-label="5 Star Rating">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+
+          <p class="testimonial-quote-text" id="testimonialQuote">
+            "Three days inside the Faraday-shielded shalas reset my autonomic nervous system faster than months of conventional clinical therapies. The intentional fusion of 432 Hz sound acoustics and Himalayan salt air created an unprecedented neurological stillness."
+          </p>
+
+          <div class="testimonial-author-row">
+            <div class="author-info">
+              <h5 id="testimonialAuthor">Elena Rostova</h5>
+              <span id="testimonialRole">Neuroscientist &amp; Sabbatical Guest • San Francisco</span>
+            </div>
+            <div class="testimonial-controls">
+              <button class="t-arrow-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="t-arrow-btn" id="nextTestimonial" aria-label="Next Testimonial">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ambient Guest Image Frame -->
+        <div class="testimonial-ambient-frame">
+          <img src="images/home_testimonials_mosaic.jpg" alt="Serene guest in linen robe sitting on luxury stone terrace sipping herbal tea overlooking Sedona red rock mountains at sunset" width="800" height="600" loading="lazy">
+          <div class="testimonial-ambient-badge">
+            <div class="ambient-badge-score">4.98</div>
+            <div class="ambient-badge-text">
+              Sanctuary Guest Score Across 1,200+ Verified Practitioner Evaluations
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: GRAND INVITATION & MASTER GATEWAY PASS (#home-invitation)
+         ========================================================================== -->
+    <section class="home-section-full" id="home-invitation" aria-label="Grand Sedona Invitation">
+      <div class="home-section-inner">
+        <div class="gateway-monumental-canvas">
+          <img src="images/home_invitation_gateway.jpg" alt="Grand illuminated stone gateway entrance to Prana & Sage luxury wellness sanctuary at twilight with copper lanterns" class="gateway-backdrop-img" width="1920" height="1080" loading="lazy">
+          <div class="gateway-scrim-radial"></div>
+
+          <!-- Embossed Golden Master Pass Card -->
+          <div class="master-pass-card">
+            <div class="pass-top-seal">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>The 7-Day Sanctuary Discovery Pass</span>
+            </div>
+            <h2 class="pass-monument-title">Step Across The Sacred Threshold</h2>
+            <div class="pass-price-banner">
+              <span class="pass-currency">$85</span>
+              <span class="pass-orig-val">Normally $240</span>
+            </div>
+            <p style="max-width: 680px; margin: 0 auto; color: #D6E8DE; font-size: 1.05rem; line-height: 1.65;">
+              Enjoy seven days of unlimited daily movement shalas, complimentary access to our subterranean halite sound dome, and the restorative basalt hydrothermal circuit.
+            </p>
+
+            <div class="pass-features-grid">
+              <div class="pass-feat-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unlimited Access to All Movement Shalas</span>
+              </div>
+              <div class="pass-feat-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>1 Subterranean 432 Hz Halite Sound Bath</span>
+              </div>
+              <div class="pass-feat-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full Basalt Hydrothermal Mineral Circuit</span>
+              </div>
+              <div class="pass-feat-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Welcome Botanical Tea Flight at the Atrium</span>
+              </div>
+            </div>
+
+            <div class="pass-buttons-row">
+              <a href="contact.html" class="btn-gold-primary">
+                <span>Claim Welcome Discovery Pass ($85)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="contact.html" class="btn-outline-glass" style="color: #FFFFFF; border-color: rgba(232, 193, 107, 0.4);">
+                <span>Book Guided Campus Tour</span>
+              </a>
+            </div>
+
+            <div class="pass-guarantee-note">
+              12-Month Activation Window • 100% Satisfaction Guarantee • 4-Hour Circadian Concierge Response
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+<footer class="sanctuary-footer" id="sanctuaryFooter" aria-label="Sanctuary Directory and Contact">
+    <div class="footer-container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Exact Brand Logo & Socials -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="brand footer-brand-lockup" aria-label="Prana &amp; Sage Sanctuary Home">
+            <!-- Sacred Lotus + Chandra Moon + Crown Aura Emblem in Emerald & Champagne Gold -->
+            <svg class="brand-icon footer-brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Yoga Sanctuary Emblem">
+              <defs>
+                <linearGradient id="footerYogaGoldGrad" x1="16" y1="10" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#F5D688"/>
+                  <stop offset="50%" stop-color="#C99436"/>
+                  <stop offset="100%" stop-color="#9A6C1C"/>
+                </linearGradient>
+                <linearGradient id="footerYogaEmeraldGrad" x1="20" y1="10" x2="44" y2="50" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#2D604C"/>
+                  <stop offset="100%" stop-color="#0A2118"/>
+                </linearGradient>
+                <radialGradient id="footerYogaAuraGrad" cx="32" cy="32" r="30" gradientUnits="userSpaceOnUse">
+                  <stop offset="60%" stop-color="#FAF7F2"/>
+                  <stop offset="100%" stop-color="#ECE3D2" stop-opacity="0.75"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Sacred Aura Medallion -->
+              <circle cx="32" cy="32" r="30" fill="url(#footerYogaAuraGrad)" class="mandala-bg"/>
+              <circle cx="32" cy="32" r="30" stroke="url(#footerYogaGoldGrad)" stroke-width="1.2" stroke-dasharray="2.5 3.5" opacity="0.8" class="mandala-outer-ring"/>
+              <circle cx="32" cy="32" r="27.5" stroke="#DCD3C3" stroke-width="0.75" class="mandala-inner-ring"/>
+
+              <!-- Chandra Moon (Lunar Restorative Balance) -->
+              <path class="chandra-moon" d="M43 21C41 33 32 42 19 40C27 44 38 43 43 35C45.5 31 45.5 26 43 21Z" 
+                    fill="url(#footerYogaGoldGrad)" opacity="0.3"/>
+
+              <!-- Ascending Sacred Lotus Petals (Flowing Prāna Energy) -->
+              <path class="lotus-petal petal-left-outer" d="M32 38C22 37 13 29 15 18C21 19 28 27 32 38Z" 
+                    fill="url(#footerYogaGoldGrad)" fill-opacity="0.95"/>
+              <path class="lotus-petal petal-right-outer" d="M32 38C42 37 51 29 49 18C43 19 36 27 32 38Z" 
+                    fill="url(#footerYogaGoldGrad)" fill-opacity="0.95"/>
+              <path class="lotus-petal petal-left-inner" d="M32 40C25 34 22 24 25 15C29 21 31 29 32 40Z" 
+                    fill="url(#footerYogaEmeraldGrad)" fill-opacity="0.9"/>
+              <path class="lotus-petal petal-right-inner" d="M32 40C39 34 42 24 39 15C35 21 33 29 32 40Z" 
+                    fill="url(#footerYogaEmeraldGrad)" fill-opacity="0.9"/>
+
+              <!-- Meditating Yogi Figure in Lotus Pose with Anjali Mudra -->
+              <path class="yogi-base" d="M20 44.5C23 40.5 27 39 32 39C37 39 41 40.5 44 44.5C42 47.5 38 48.5 32 48.5C26 48.5 22 47.5 20 44.5Z" 
+                    fill="url(#footerYogaEmeraldGrad)"/>
+              <path class="yogi-torso" d="M32 25C29.5 27.5 28.5 30 29 34C30.5 35 33.5 35 35 34C35.5 30 34.5 27.5 32 25Z" 
+                    fill="url(#footerYogaEmeraldGrad)"/>
+              <circle class="yogi-head" cx="32" cy="21" r="3.2" fill="url(#footerYogaEmeraldGrad)"/>
+
+              <!-- Illuminated Crown Chakra Flame & Golden Bindu -->
+              <circle class="crown-bindu" cx="32" cy="14" r="2.2" fill="url(#footerYogaGoldGrad)"/>
+              <path class="crown-flame" d="M32 8.5C30.8 10.5 30.8 12.2 32 13.5C33.2 12.2 33.2 10.5 32 8.5Z" fill="url(#footerYogaGoldGrad)"/>
+
+              <!-- Grounding Ripples -->
+              <path class="grounding-ripple ripple-1" d="M22 52C26 54 38 54 42 52" stroke="url(#footerYogaGoldGrad)" stroke-width="1.6" stroke-linecap="round"/>
+              <path class="grounding-ripple ripple-2" d="M26 55.5C28.5 56.8 35.5 56.8 38 55.5" stroke="url(#footerYogaEmeraldGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-title footer-brand-title-text">Prana &amp; Sage</span>
+              <span class="brand-tagline footer-brand-tagline-text">Yoga &amp; Wellness Sanctuary</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Empowering you to live harmoniously through accessible, sacred yoga practices, mindful meditation, and holistic wellness.
+          </p>
+          <div class="footer-social-row" aria-label="Social Channels">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- Twitter / X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-circle" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Sanctuary Home</a></li>
+            <li><a href="about.html">Living Lineage &amp; Heritage</a></li>
+            <li><a href="gallery.html">Sanctuary Gallery</a></li>
+            <li><a href="service.html">Sanctuary Spaces &amp; Rituals</a></li>
+            <li><a href="service.html#service-memberships">Sabbatical Passes</a></li>
+            <li><a href="contact.html">Concierge &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#service-movement">Somatic Movement Shala</a></li>
+            <li><a href="service.html#service-sound">Subterranean Sound Dome</a></li>
+            <li><a href="service.html#service-thermal">Basalt Hydrothermal Baths</a></li>
+            <li><a href="service.html#service-apothecary">Desert Botanical Apothecary</a></li>
+            <li><a href="contact.html#concierge-direct">Sanctuary Consultations</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>123 Sanctuary Avenue, Sedona Hub, Earth</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@growwvirtual.com">info@pranaandsage.com</a>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Mon - Sat: 9AM - 6PM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          &copy; 2026 <strong>Prana &amp; Sage Yoga Sanctuary</strong>. Empowering mindful living &amp; holistic wellness.
+        </div>
+        <div class="footer-bottom-right">
+          <nav class="footer-legal-nav" aria-label="Sanctuary Legal &amp; Policies">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#etiquette">Studio Etiquette</a>
+          </nav>
+          <button class="footer-ascend-btn" id="ascendTopBtn" aria-label="Ascend to top of page" title="Ascend to Top">
+            <span>Ascend to Top</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       RESPONSIVE MOBILE DRAWER
+       ========================================================================== -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Menu">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <svg class="brand-icon" style="width: 36px; height: 36px;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" fill="#FAF7F2"/>
+          <circle cx="32" cy="32" r="30" stroke="#C99436" stroke-width="1.2" stroke-dasharray="2.5 3.5" opacity="0.75"/>
+          <circle cx="32" cy="32" r="27.5" stroke="#DCD3C3" stroke-width="0.75"/>
+          <path d="M43 21C41 33 32 42 19 40C27 44 38 43 43 35C45.5 31 45.5 26 43 21Z" fill="#C99436" opacity="0.3"/>
+          <path d="M32 38C22 37 13 29 15 18C21 19 28 27 32 38Z" fill="#C99436" fill-opacity="0.95"/>
+          <path d="M32 38C42 37 51 29 49 18C43 19 36 27 32 38Z" fill="#C99436" fill-opacity="0.95"/>
+          <path d="M32 40C25 34 22 24 25 15C29 21 31 29 32 40Z" fill="#0A2118" fill-opacity="0.9"/>
+          <path d="M32 40C39 34 42 24 39 15C35 21 33 29 32 40Z" fill="#0A2118" fill-opacity="0.9"/>
+          <path d="M20 44.5C23 40.5 27 39 32 39C37 39 41 40.5 44 44.5C42 47.5 38 48.5 32 48.5C26 48.5 22 47.5 20 44.5Z" fill="#0A2118"/>
+          <circle cx="32" cy="21" r="3.2" fill="#0A2118"/>
+          <circle cx="32" cy="14" r="2.2" fill="#C99436"/>
+          <path d="M32 8.5C30.8 10.5 30.8 12.2 32 13.5C33.2 12.2 33.2 10.5 32 8.5Z" fill="#C99436"/>
+          <path d="M22 52C26 54 38 54 42 52" stroke="#C99436" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title" style="font-size: 1.35rem;">Prana & Sage</span>
+          <span class="brand-tagline">Yoga Sanctuary</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Accordion Nav: Home, About, Service, Contact -->
+    <ul class="mobile-nav-list">
+      
+      <!-- Home with Accordion (Active) -->
+      <li class="mobile-nav-item">
+        <a href="index.html" class="mobile-nav-header" onclick="closeDrawer()">
+          <span style="color: var(--color-gold-primary); font-weight: 700;">Home</span>
+        </a>
+      </li>
+
+      <!-- About (Direct link) -->
+      <li class="mobile-nav-item">
+        <a href="about.html" class="mobile-nav-header" onclick="closeDrawer()">
+          <span>About</span>
+        </a>
+      </li>
+
+      <!-- Gallery (Direct link) -->
+      <li class="mobile-nav-item">
+        <a href="gallery.html" class="mobile-nav-header" onclick="closeDrawer()">
+          <span>Gallery</span>
+        </a>
+      </li>
+
+      <!-- Service (Direct link) -->
+      <li class="mobile-nav-item">
+        <a href="service.html" class="mobile-nav-header" onclick="closeDrawer()">
+          <span>Service</span>
+        </a>
+      </li>
+
+      <!-- Contact (Direct link) -->
+      <li class="mobile-nav-item">
+        <a href="contact.html" class="mobile-nav-header" onclick="closeDrawer()">
+          <span>Contact</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Quick Action Row at the Bottom: Circular Theme Switcher + Golden Pill Log In (Ref: media_1790079607491.png) -->
+    <div class="drawer-actions-row">
+      <!-- Circular Theme Toggle -->
+      <button id="mobileThemeToggle" class="drawer-theme-circle" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+        <!-- Moon Icon (Active in Light Mode) -->
+        <svg class="mobile-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <!-- Sun Icon (Active in Dark Mode) -->
+        <svg class="mobile-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+
+      <!-- Golden Pill Log In Button -->
+      <button class="drawer-login-pill" id="mobileLoginBtn" aria-label="Member Login" onclick="window.location.href='login.html'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Log In</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MEMBER LOGIN MODAL DIALOG
+       ========================================================================== -->
+  <div class="login-modal" id="loginModal" role="dialog" aria-modal="true" aria-label="Member Login">
+    <div class="login-card">
+      <button class="login-close-btn" id="loginCloseBtn" aria-label="Close login dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="login-header">
+        <span class="login-subtitle">Welcome Back</span>
+        <h3 class="login-title">Sanctuary Member Portal</h3>
+        <p class="login-desc">Sign in to book mats, manage passes, and access on-demand sessions.</p>
+      </div>
+
+      <form class="login-form" id="loginForm" onsubmit="event.preventDefault(); alert('Welcome back to Prana & Sage Sanctuary!'); document.getElementById('loginModal').classList.remove('is-active'); document.body.style.overflow = '';">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="student@pranaandsage.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPass">Password</label>
+          <input type="password" id="loginPass" class="form-input" placeholder="••••••••" required>
+        </div>
+        <div class="form-options">
+          <label class="remember-label">
+            <input type="checkbox" checked style="accent-color: var(--color-gold-primary);">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+          Sign In to Portal
+        </button>
+        <p class="login-footer-note">New to Prana? <a href="#about" onclick="document.getElementById('loginModal').classList.remove('is-active'); document.body.style.overflow = '';">Start with an Intro Pass</a></p>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       JAVASCRIPT (INTERACTIONS, CONTROLS & CREATIVE ANIMATIONS)
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const headerWrapper = document.getElementById('headerWrapper');
+      const mobileToggle = document.getElementById('mobileToggle');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileOverlay = document.getElementById('mobileOverlay');
+      const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+
+      // Theme toggle elements
+      const themeToggle = document.getElementById('themeToggle');
+      const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+      const iconMoon = document.querySelector('.icon-moon');
+      const iconSun = document.querySelector('.icon-sun');
+      const mobileIconMoon = document.querySelector('.mobile-icon-moon');
+      const mobileIconSun = document.querySelector('.mobile-icon-sun');
+      const mobileThemeText = document.querySelector('.mobile-theme-text');
+
+      // Login modal elements
+      const loginBtn = document.getElementById('loginBtn');
+      const mobileLoginBtn = document.getElementById('mobileLoginBtn');
+      const loginModal = document.getElementById('loginModal');
+      const loginCloseBtn = document.getElementById('loginCloseBtn');
+      const loginEmail = document.getElementById('loginEmail');
+
+      // Magnetic Nav Slider Pill
+      const navMenu = document.getElementById('navMenu');
+      const sliderPill = document.getElementById('navSliderPill');
+      const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+
+      // 1. Dynamic Magnetic Zen Slider Pill
+      const updateSlider = (targetLink) => {
+        if (!targetLink || !sliderPill || !navMenu) return;
+        const rect = targetLink.getBoundingClientRect();
+        const menuRect = navMenu.getBoundingClientRect();
+        const left = rect.left - menuRect.left;
+        sliderPill.style.transform = `translateX(${left}px)`;
+        sliderPill.style.width = `${rect.width}px`;
+        sliderPill.style.opacity = '1';
+      };
+
+      const activeLink = document.querySelector('.nav-menu .nav-link.is-active');
+      if (activeLink) {
+        setTimeout(() => updateSlider(activeLink), 80);
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => updateSlider(link));
+        link.addEventListener('click', () => {
+          navLinks.forEach(l => l.classList.remove('is-active'));
+          link.classList.add('is-active');
+          updateSlider(link);
+        });
+      });
+
+      if (navMenu) {
+        navMenu.addEventListener('mouseleave', () => {
+          const currentActive = document.querySelector('.nav-menu .nav-link.is-active');
+          if (currentActive) updateSlider(currentActive);
+        });
+      }
+
+      window.addEventListener('resize', () => {
+        const currentActive = document.querySelector('.nav-menu .nav-link.is-active');
+        if (currentActive) updateSlider(currentActive);
+      });
+
+      // 2. Floating Capsule Scrolled Elevation
+      const handleScroll = () => {
+        if (window.scrollY > 20) {
+          headerWrapper.classList.add('is-scrolled');
+        } else {
+          headerWrapper.classList.remove('is-scrolled');
+        }
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      // 3. Interactive Zen Water Ripple Effect
+      const createZenRipple = (e) => {
+        const target = e.currentTarget;
+        const circle = document.createElement('span');
+        const diameter = Math.max(target.clientWidth, target.clientHeight);
+        const radius = diameter / 2;
+        const rect = target.getBoundingClientRect();
+        
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${e.clientX - rect.left - radius}px`;
+        circle.style.top = `${e.clientY - rect.top - radius}px`;
+        circle.classList.add('zen-ripple');
+
+        const existingRipple = target.getElementsByClassName('zen-ripple')[0];
+        if (existingRipple) existingRipple.remove();
+
+        target.appendChild(circle);
+        setTimeout(() => circle.remove(), 700);
+      };
+
+      document.querySelectorAll('.btn-cta, .action-btn, .mobile-toggle').forEach(el => {
+        el.addEventListener('click', createZenRipple);
+      });
+
+      // 4. Mobile Drawer Controls
+      window.closeDrawer = () => {
+        mobileDrawer.classList.remove('is-active');
+        mobileOverlay.classList.remove('is-active');
+        mobileToggle.classList.remove('is-active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      };
+
+      const openDrawer = () => {
+        mobileDrawer.classList.add('is-active');
+        mobileOverlay.classList.add('is-active');
+        mobileToggle.classList.add('is-active');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      };
+
+      mobileToggle.addEventListener('click', () => {
+        if (mobileDrawer.classList.contains('is-active')) {
+          window.closeDrawer();
+        } else {
+          openDrawer();
+        }
+      });
+
+      mobileOverlay.addEventListener('click', window.closeDrawer);
+      drawerCloseBtn.addEventListener('click', window.closeDrawer);
+
+      // 5. Mobile Accordions
+      const accordionHeaders = document.querySelectorAll('[data-toggle="accordion"]');
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const parentItem = header.closest('.mobile-nav-item');
+          const isOpen = parentItem.classList.contains('open');
+
+          document.querySelectorAll('.mobile-nav-item.open').forEach(item => {
+            if (item !== parentItem) item.classList.remove('open');
+          });
+
+          if (isOpen) {
+            parentItem.classList.remove('open');
+          } else {
+            parentItem.classList.add('open');
+          }
+        });
+      });
+
+      // 6. Dark Mode / Light Mode Theme Switching with Celestial Orbit Animation
+      const setTheme = (isDark) => {
+        if (isDark) {
+          document.body.classList.add('dark-mode');
+          if (iconMoon) iconMoon.style.display = 'none';
+          if (iconSun) iconSun.style.display = 'block';
+          if (mobileIconMoon) mobileIconMoon.style.display = 'none';
+          if (mobileIconSun) mobileIconSun.style.display = 'block';
+          if (mobileThemeText) mobileThemeText.textContent = 'Switch to Light Mode';
+          localStorage.setItem('sanctuary_theme', 'dark');
+        } else {
+          document.body.classList.remove('dark-mode');
+          if (iconMoon) iconMoon.style.display = 'block';
+          if (iconSun) iconSun.style.display = 'none';
+          if (mobileIconMoon) mobileIconMoon.style.display = 'block';
+          if (mobileIconSun) mobileIconSun.style.display = 'none';
+          if (mobileThemeText) mobileThemeText.textContent = 'Switch to Dark Mode';
+          localStorage.setItem('sanctuary_theme', 'light');
+        }
+        
+        // Refresh slider pill position
+        const curActive = document.querySelector('.nav-menu .nav-link.is-active');
+        if (curActive) updateSlider(curActive);
+      };
+
+      // Load saved preference or system preference
+      const savedTheme = localStorage.getItem('sanctuary_theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
+
+      const toggleTheme = () => {
+        const isCurrentlyDark = document.body.classList.contains('dark-mode');
+        
+        // Trigger celestial 360 orbit animation
+        if (themeToggle) {
+          themeToggle.classList.add('switching');
+          setTimeout(() => themeToggle.classList.remove('switching'), 550);
+        }
+        if (mobileThemeToggle) {
+          mobileThemeToggle.classList.add('switching');
+          setTimeout(() => mobileThemeToggle.classList.remove('switching'), 550);
+        }
+
+        setTheme(!isCurrentlyDark);
+      };
+
+      if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+      if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
+      // 7. Member Login Modal Controls
+      const openLogin = () => {
+        if (window.closeDrawer) window.closeDrawer();
+        loginModal.classList.add('is-active');
+        setTimeout(() => loginEmail && loginEmail.focus(), 120);
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeLogin = () => {
+        loginModal.classList.remove('is-active');
+        document.body.style.overflow = '';
+      };
+
+      if (loginBtn) loginBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'login.html'; });
+      if (mobileLoginBtn) mobileLoginBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'login.html'; });
+      if (loginCloseBtn) loginCloseBtn.addEventListener('click', closeLogin);
+
+      loginModal.addEventListener('click', (e) => {
+        if (e.target === loginModal) closeLogin();
+      });
+
+      // 8. Global Escape Key Handler
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (loginModal.classList.contains('is-active')) closeLogin();
+          if (mobileDrawer.classList.contains('is-active')) window.closeDrawer();
+        }
+      });
+
+      // 9. Sanctuary Footer Controls: Ascend to Top
+      
+      // ==========================================================================
+      // FLAGSHIP HOME PAGE INTERACTIVE CONTROLLERS
+      // ==========================================================================
+
+      // 1. Circadian Horizon Dial Controller
+      const circadianData = {
+        dawn: {
+          status: "Dawn Interval Active: Solar Vitality Sadhana",
+          time: "06:00 - 09:30 AM"
+        },
+        noon: {
+          status: "Solar Noon Interval Active: Neuro-Prana Recalibration",
+          time: "11:00 AM - 02:30 PM"
+        },
+        sunset: {
+          status: "Sunset Interval Active: Restorative Yin & Canyon Glow",
+          time: "04:30 - 07:00 PM"
+        },
+        twilight: {
+          status: "Twilight Interval Active: Subterranean 432 Hz Sound Bath",
+          time: "07:30 - 10:00 PM"
+        }
+      };
+
+      const circadianButtons = document.querySelectorAll('#circadianDialGrid .circadian-node-btn');
+      const circadianLiveStatus = document.getElementById('circadianLiveStatus');
+
+      circadianButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          circadianButtons.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          const dialKey = btn.getAttribute('data-dial');
+          if (circadianData[dialKey] && circadianLiveStatus) {
+            circadianLiveStatus.textContent = circadianData[dialKey].status;
+          }
+        });
+      });
+
+      // 2. Architectural Campus Inspection Lenses Controller
+      const campusData = {
+        shala: {
+          title: "The Solstice Movement Shala",
+          desc: "Curved rammed-earth pavilions with underfloor cedar and panoramic canyon glass",
+          elevation: "4,500 FT",
+          purity: "99.8%",
+          orientation: "180° S"
+        },
+        sound: {
+          title: "The Nada Halite Sound Dome",
+          desc: "Subterranean acoustic chamber lined with 40,000 lbs of raw Himalayan salt",
+          elevation: "4,460 FT",
+          purity: "100%",
+          orientation: "Sub-Earth"
+        },
+        baths: {
+          title: "The Basalt Hydrothermal Baths",
+          desc: "Twin natural mineral hot pools carved into honey travertine paired with Nordic sauna",
+          elevation: "4,480 FT",
+          purity: "7.4 pH",
+          orientation: "Thermal"
+        },
+        tea: {
+          title: "The Apothecary Tea Atrium",
+          desc: "Open-air cedar courtyard with travertine fireplace and 42 organic desert herbal blends",
+          elevation: "4,510 FT",
+          purity: "Organic",
+          orientation: "East Sun"
+        }
+      };
+
+      const lensCards = document.querySelectorAll('#campusLensesGrid .campus-lens-card');
+      const hudTitle = document.getElementById('hudCampusTitle');
+      const hudDesc = document.getElementById('hudCampusDesc');
+      const hudStatElevation = document.getElementById('hudStatElevation');
+      const hudStatAcoustics = document.getElementById('hudStatAcoustics');
+      const hudStatOrientation = document.getElementById('hudStatOrientation');
+
+      lensCards.forEach(card => {
+        card.addEventListener('click', () => {
+          lensCards.forEach(c => c.classList.remove('is-active'));
+          card.classList.add('is-active');
+          const lensKey = card.getAttribute('data-lens');
+          if (campusData[lensKey]) {
+            const data = campusData[lensKey];
+            if (hudTitle) hudTitle.textContent = data.title;
+            if (hudDesc) hudDesc.textContent = data.desc;
+            if (hudStatElevation) hudStatElevation.textContent = data.elevation;
+            if (hudStatAcoustics) hudStatAcoustics.textContent = data.purity;
+            if (hudStatOrientation) hudStatOrientation.textContent = data.orientation;
+          }
+        });
+      });
+
+      // 3. Daily Practice Schedule Filter Controller
+      const scheduleFilterBtns = document.querySelectorAll('#scheduleFilterBar .schedule-tab-btn');
+      const scheduleClassCards = document.querySelectorAll('#scheduleCardsList .schedule-class-card');
+
+      scheduleFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          scheduleFilterBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          const filter = btn.getAttribute('data-filter');
+
+          scheduleClassCards.forEach(card => {
+            const timeSlot = card.getAttribute('data-time');
+            if (filter === 'all' || filter === timeSlot) {
+              card.style.display = 'grid';
+              card.style.opacity = '1';
+            } else {
+              card.style.display = 'none';
+              card.style.opacity = '0';
+            }
+          });
+        });
+      });
+
+      // 4. Testimonials Slider Controller
+      const testimonials = [
+        {
+          quote: '"Three days inside the Faraday-shielded shalas reset my autonomic nervous system faster than months of conventional clinical therapies. The intentional fusion of 432 Hz sound acoustics and Himalayan salt air created an unprecedented neurological stillness."',
+          author: "Elena Rostova",
+          role: "Neuroscientist & Sabbatical Guest • San Francisco"
+        },
+        {
+          quote: '"The biophilic design is not merely decorative; it fundamentally alters your breathing pattern the instant you cross the travertine threshold. Prana & Sage is the rarest kind of wellness space: unpretentious, scientifically precise, and deeply reverent."',
+          author: "Marcus Vance",
+          role: "Architectural Director & Member • London"
+        },
+        {
+          quote: '"As an integrative physician, I refer patients who have exhausted traditional stress management techniques. The hydrothermal contrast circuits paired with restorative somatic alignment produce measurable improvements in heart rate variability."',
+          author: "Dr. Ananya Rao",
+          role: "Integrative Physician & Educator • New York"
+        }
+      ];
+
+      let currentTestimonialIdx = 0;
+      const tQuote = document.getElementById('testimonialQuote');
+      const tAuthor = document.getElementById('testimonialAuthor');
+      const tRole = document.getElementById('testimonialRole');
+      const prevBtn = document.getElementById('prevTestimonial');
+      const nextBtn = document.getElementById('nextTestimonial');
+
+      function updateTestimonial(idx) {
+        if (!tQuote || !tAuthor || !tRole) return;
+        tQuote.style.opacity = '0';
+        tQuote.style.transform = 'translateY(8px)';
+        setTimeout(() => {
+          tQuote.textContent = testimonials[idx].quote;
+          tAuthor.textContent = testimonials[idx].author;
+          tRole.textContent = testimonials[idx].role;
+          tQuote.style.opacity = '1';
+          tQuote.style.transform = 'translateY(0)';
+        }, 180);
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentTestimonialIdx = (currentTestimonialIdx - 1 + testimonials.length) % testimonials.length;
+          updateTestimonial(currentTestimonialIdx);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentTestimonialIdx = (currentTestimonialIdx + 1) % testimonials.length;
+          updateTestimonial(currentTestimonialIdx);
+        });
+      }
+
+
+      const ascendTopBtn = document.getElementById('ascendTopBtn');
+      if (ascendTopBtn) {
+        ascendTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for Prana &amp; Sage Luxury Yoga &amp; Wellness Sanctuary. Create your sacred profile to reserve shala mats, hydrothermal sessions, and sound baths.">
+  <title>Register for Prana &amp; Sage | Yoga &amp; Wellness Sanctuary</title>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. COLOR SYSTEM & DESIGN TOKENS (EXACT MATCH WITH index.html & login.html)
+       ========================================================================== */
+    :root {
+      /* Canvas & Surfaces */
+      --color-silk: #F8F6F0;
+      --color-surface: #FFFFFF;
+      --color-surface-card: #FFFFFF;
+      --color-input-bg: #F4F1EA;
+
+      /* Borders */
+      --color-border: rgba(10, 33, 24, 0.12);
+      --color-border-focus: rgba(201, 148, 54, 0.55);
+
+      /* Deep Emerald Palette */
+      --color-emerald-deep: #0A2118;
+      --color-emerald-dark: #071711;
+      --color-emerald-medium: #1C4434;
+      --color-emerald-soft: #4A7A66;
+      --color-emerald-mist: #EAF2EE;
+
+      /* Champagne Gold & Amber */
+      --color-gold-primary: #C99436;
+      --color-gold-hover: #B38029;
+      --color-gold-light: #F7ECD2;
+      --color-gold-dark: #9A6C1C;
+      --color-gold-gradient: linear-gradient(135deg, #E8C16B 0%, #C99436 50%, #A97321 100%);
+      --color-gold-glow: 0 8px 24px -2px rgba(201, 148, 54, 0.35);
+
+      /* Typography */
+      --color-text-main: #0A2118;
+      --color-text-body: #4F6156;
+      --color-text-muted: #798D82;
+      --color-white: #FFFFFF;
+
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      --social-bg: #F4F1EA;
+      --social-border: rgba(10, 33, 24, 0.1);
+    }
+
+    /* Dark Mode (Default look as in login.html) */
+    body.dark-mode {
+      --color-silk: #080E0B;
+      --color-surface: #0B130F;
+      --color-surface-card: #101915;
+      --color-input-bg: #14201A;
+
+      --color-border: rgba(232, 193, 107, 0.16);
+      --color-border-focus: rgba(232, 193, 107, 0.6);
+
+      --color-emerald-deep: #F3F7F4;
+      --color-emerald-dark: #FFFFFF;
+      --color-emerald-medium: #7EB89F;
+      --color-emerald-soft: #A2CBB7;
+      --color-emerald-mist: #15241C;
+
+      --color-gold-primary: #ECC369;
+      --color-gold-hover: #F7D58B;
+      --color-gold-light: #241F14;
+      --color-gold-dark: #C99436;
+      --color-gold-gradient: linear-gradient(135deg, #F5D588 0%, #ECC369 50%, #C48E2F 100%);
+      --color-gold-glow: 0 8px 28px -2px rgba(236, 195, 105, 0.45);
+
+      --color-text-main: #F3F7F4;
+      --color-text-body: #A4B7AD;
+      --color-text-muted: #7E9388;
+      --color-white: #101915;
+
+      --social-bg: #14201A;
+      --social-border: rgba(232, 193, 107, 0.16);
+    }
+
+    /* ==========================================================================
+       2. RESET & 50/50 SPLIT SCREEN LAYOUT (Zero Scrollbar, Viewport Fitted)
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scrollbar-width: none !important;
+      -ms-overflow-style: none !important;
+    }
+
+    *::-webkit-scrollbar {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+    }
+
+    html, body {
+      height: 100vh;
+      max-height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-surface);
+      color: var(--color-text-main);
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      transition: background-color var(--transition-smooth), color var(--transition-smooth);
+    }
+
+    .split-login-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100vh;
+      max-height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* ==========================================================================
+       3. LEFT PANEL: VISUAL SHOWCASE (Fitted Compact Luxury Layout)
+       ========================================================================== */
+    .split-left-panel {
+      position: relative;
+      background-image: url('images/home_hero_threshold.jpg');
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2.25rem clamp(2rem, 3.5vw, 3.5rem);
+      height: 100vh;
+      max-height: 100vh;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .split-left-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 33, 24, 0.94) 0%,
+        rgba(7, 23, 17, 0.88) 55%,
+        rgba(13, 38, 29, 0.94) 100%
+      );
+      z-index: 1;
+    }
+
+    body.dark-mode .split-left-overlay {
+      background: linear-gradient(
+        135deg,
+        rgba(7, 23, 17, 0.96) 0%,
+        rgba(10, 33, 24, 0.90) 60%,
+        rgba(5, 16, 12, 0.96) 100%
+      );
+    }
+
+    .split-left-top,
+    .split-left-center,
+    .split-left-bottom {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ==========================================================================
+       BRAND LOGO & SACRED LOTUS ANIMATIONS (Exact Match with index.html)
+       ========================================================================== */
+    .brand-lockup, .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      transition: transform var(--transition-smooth), filter var(--transition-smooth);
+      filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.35));
+    }
+
+    .brand-lockup:hover .brand-icon,
+    .brand:hover .brand-icon {
+      transform: scale(1.08) translateY(-1px);
+      filter: drop-shadow(0 8px 22px rgba(201, 148, 54, 0.55));
+    }
+
+    /* 1. Mandala Sacred Orbit (Outer Clockwise, Inner Counter-Clockwise) */
+    @keyframes lotusMandalaOrbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes mandalaCounterRotate {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    .mandala-outer-ring {
+      transform-origin: 32px 32px;
+      animation: lotusMandalaOrbit 26s linear infinite;
+      transition: animation-duration 0.6s ease;
+    }
+
+    .mandala-inner-ring {
+      transform-origin: 32px 32px;
+      animation: mandalaCounterRotate 36s linear infinite;
+      stroke: var(--color-gold-primary);
+      opacity: 0.55;
+    }
+
+    .brand-lockup:hover .mandala-outer-ring,
+    .brand:hover .mandala-outer-ring {
+      animation-duration: 9s;
+    }
+
+    .brand-lockup:hover .mandala-inner-ring,
+    .brand:hover .mandala-inner-ring {
+      animation-duration: 14s;
+    }
+
+    /* 2. Prana Breathing Pulse (Crown Chakra Bindu & Flame) */
+    @keyframes pranaBreathe {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.85;
+        filter: drop-shadow(0 0 2px rgba(201, 148, 54, 0.5));
+      }
+      50% {
+        transform: scale(1.35);
+        opacity: 1;
+        filter: drop-shadow(0 0 7px rgba(201, 148, 54, 0.95)) drop-shadow(0 0 12px rgba(245, 214, 136, 0.85));
+      }
+    }
+
+    .crown-bindu {
+      transform-origin: 32px 14px;
+      animation: pranaBreathe 4s ease-in-out infinite;
+    }
+
+    .crown-flame {
+      transform-origin: 32px 11px;
+      animation: pranaBreathe 4s ease-in-out infinite 0.4s;
+    }
+
+    /* 3. Chandra Moon Glow */
+    @keyframes chandraGlow {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.55; }
+    }
+
+    .chandra-moon {
+      animation: chandraGlow 6s ease-in-out infinite;
+    }
+
+    /* 4. Lotus Petals Organic Spring Bloom on Hover */
+    .brand-icon .lotus-petal {
+      transform-origin: 32px 39px;
+      transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .brand-lockup:hover .lotus-petal.petal-left-outer,
+    .brand:hover .lotus-petal.petal-left-outer {
+      transform: rotate(-7deg) scale(1.06);
+    }
+
+    .brand-lockup:hover .lotus-petal.petal-right-outer,
+    .brand:hover .lotus-petal.petal-right-outer {
+      transform: rotate(7deg) scale(1.06);
+    }
+
+    .brand-lockup:hover .lotus-petal.petal-left-inner,
+    .brand:hover .lotus-petal.petal-left-inner {
+      transform: rotate(-3.5deg) scale(1.03);
+    }
+
+    .brand-lockup:hover .lotus-petal.petal-right-inner,
+    .brand:hover .lotus-petal.petal-right-inner {
+      transform: rotate(3.5deg) scale(1.03);
+    }
+
+    /* 5. Grounding Sacred Energy Ripples */
+    @keyframes groundingRipplePulse {
+      0%, 100% { opacity: 0.7; transform: scaleX(1); }
+      50% { opacity: 1; transform: scaleX(1.04); }
+    }
+
+    .grounding-ripple {
+      transform-origin: 32px 52px;
+      animation: groundingRipplePulse 5s ease-in-out infinite;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Luminous Gold Leaf Foil Shimmer on Brand Title */
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      line-height: 1.05;
+      text-transform: uppercase;
+      background: linear-gradient(120deg, 
+        #FFFFFF 0%, 
+        #FFFFFF 35%, 
+        var(--color-gold-primary) 50%, 
+        #FFFFFF 65%, 
+        #FFFFFF 100%
+      );
+      background-size: 240% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: background-position 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .brand-lockup:hover .brand-title,
+    .brand:hover .brand-title {
+      background-position: -120% center;
+    }
+
+    .brand-tagline {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--color-gold-primary);
+      font-weight: 600;
+      margin-top: 3px;
+      transition: color var(--transition-smooth);
+    }
+
+    /* Left Center: Headline & Subtitle */
+    .split-left-center {
+      max-width: 480px;
+      margin: 1.5rem 0;
+    }
+
+    .left-hero-heading {
+      font-family: var(--font-sans);
+      font-size: clamp(1.85rem, 2.5vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: #FFFFFF;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .left-hero-desc {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: #D2E4DA;
+      font-weight: 400;
+    }
+
+    /* Left Bottom: Subtle Legal / Encryption Notice */
+    .split-left-bottom {
+      font-size: 0.75rem;
+      color: #8DA89A;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+    }
+
+    /* ==========================================================================
+       4. RIGHT PANEL: AUTHENTICATION FORM (Compact Height, Zero Scrollbar)
+       ========================================================================== */
+    .split-right-panel {
+      position: relative;
+      background-color: var(--color-surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem clamp(2rem, 3.5vw, 3.5rem);
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      box-sizing: border-box;
+    }
+
+    .split-right-panel::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    /* Top-Right Control Bar: Dark Mode */
+    .split-right-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 36px;
+    }
+
+    .icon-ctrl-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      border: 1px solid var(--color-border);
+      background: var(--color-input-bg);
+      color: var(--color-text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+    }
+
+    .icon-ctrl-btn:hover {
+      border-color: var(--color-gold-primary);
+      transform: translateY(-2px);
+    }
+
+    .icon-ctrl-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Center: Form Stage */
+    .split-form-stage {
+      max-width: 410px;
+      width: 100%;
+      margin: auto;
+      padding: 0.25rem 0;
+    }
+
+    .form-header-title {
+      font-family: var(--font-sans);
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .form-header-subtitle {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1.15rem;
+      line-height: 1.45;
+    }
+
+    /* Form Fields */
+    .auth-pure-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .form-row-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.32rem;
+    }
+
+    .field-top-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pure-form-label {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+
+    .pure-forgot-link {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-gold-primary);
+      text-decoration: none;
+      transition: color var(--transition-smooth);
+    }
+
+    .pure-forgot-link:hover {
+      text-decoration: underline;
+      color: var(--color-gold-hover);
+    }
+
+    .pure-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .pure-form-input {
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+      background: var(--color-input-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 9px;
+      padding: 0.65rem 0.95rem;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--color-text-main);
+      outline: none;
+      transition: all var(--transition-smooth);
+    }
+
+    .pure-form-input:focus {
+      border-color: var(--color-gold-primary);
+      box-shadow: 0 0 0 3px rgba(201, 148, 54, 0.2);
+    }
+
+    .pure-form-input.has-eye {
+      padding-right: 2.6rem;
+    }
+
+    .pure-eye-btn {
+      position: absolute;
+      right: 0.85rem;
+      background: transparent;
+      border: none;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .pure-eye-btn:hover {
+      color: var(--color-gold-primary);
+    }
+
+    .pure-eye-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Checkbox Row (Terms & Policy) */
+    .pure-checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.82rem;
+      color: var(--color-text-body);
+      cursor: pointer;
+      user-select: none;
+      margin-top: 0.1rem;
+    }
+
+    .pure-checkbox-row input[type="checkbox"] {
+      accent-color: var(--color-gold-primary);
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+
+    /* Main Submit CTA Button */
+    .btn-dashboard-submit {
+      width: 100%;
+      height: 44px;
+      border-radius: 9px;
+      border: none;
+      background: var(--color-gold-gradient);
+      color: #0A2118 !important;
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: var(--color-gold-glow);
+      transition: all var(--transition-smooth);
+      margin-top: 0.2rem;
+    }
+
+    .btn-dashboard-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(201, 148, 54, 0.4);
+      filter: brightness(1.06);
+    }
+
+    /* Divider Row */
+    .divider-row-tag {
+      position: relative;
+      text-align: center;
+      margin: 0.85rem 0;
+    }
+
+    .divider-row-tag::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--color-border);
+    }
+
+    .divider-row-text {
+      position: relative;
+      z-index: 1;
+      background: var(--color-surface);
+      padding: 0 0.85rem;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+
+    /* Social Login Buttons: 3 Rounded Cards side-by-side */
+    .social-row-trio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    .btn-social-card {
+      height: 40px;
+      border-radius: 9px;
+      background: var(--social-bg);
+      border: 1px solid var(--social-border);
+      color: var(--color-text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      text-decoration: none;
+    }
+
+    .btn-social-card:hover {
+      border-color: var(--color-gold-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-social-card svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Bottom Prompt Link */
+    .bottom-switch-row {
+      text-align: center;
+      font-size: 0.84rem;
+      color: var(--color-text-muted);
+      margin-top: 0.85rem;
+    }
+
+    .bottom-switch-link {
+      color: var(--color-gold-primary);
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 0.35rem;
+    }
+
+    .bottom-switch-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ==========================================================================
+       5. TOAST NOTICE
+       ========================================================================== */
+    .toast-notice {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 3000;
+      background: #0A2118;
+      border: 1px solid var(--color-gold-primary);
+      color: #FFFFFF;
+      padding: 0.85rem 1.4rem;
+      border-radius: 12px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      transform: translateY(120%);
+      opacity: 0;
+      transition: all var(--transition-smooth);
+      pointer-events: none;
+    }
+
+    .toast-notice.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       6. RESPONSIVE BREAKPOINTS (Mobile & Tablet)
+       ========================================================================== */
+    @media (max-width: 960px) {
+      html, body {
+        overflow-y: auto;
+        height: auto;
+        max-height: none;
+      }
+      .split-login-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+      }
+      .split-left-panel {
+        padding: 2.5rem 1.5rem;
+        height: auto;
+        max-height: none;
+        min-height: 320px;
+      }
+      .split-left-center {
+        margin: 1.5rem 0;
+      }
+      .left-hero-heading {
+        font-size: 1.85rem;
+      }
+      .split-right-panel {
+        padding: 2rem 1.5rem;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+      }
+      .split-form-stage {
+        padding: 1rem 0;
+      }
+    }
+  </style>
+</head>
+<body class="dark-mode">
+
+  <!-- ==========================================================================
+       SPLIT 50/50 REGISTRATION CONTAINER (Matching login.html)
+       ========================================================================== -->
+  <div class="split-login-container">
+
+    <!-- ========================================================================
+         LEFT 50%: BRAND VISUAL SHOWCASE
+         ======================================================================== -->
+    <div class="split-left-panel">
+      <div class="split-left-overlay"></div>
+
+      <!-- Left Top: Exact Navbar Logo Lockup -->
+      <div class="split-left-top">
+        <a href="index.html" class="brand-lockup brand" aria-label="Prana &amp; Sage Sanctuary Home">
+          <!-- Sacred Lotus + Chandra Moon + Crown Aura Emblem in Emerald & Champagne Gold (Exact index.html SVG) -->
+          <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Yoga Sanctuary Emblem">
+            <defs>
+              <linearGradient id="yogaGoldGrad" x1="16" y1="10" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#F5D688"/>
+                <stop offset="50%" stop-color="#C99436"/>
+                <stop offset="100%" stop-color="#9A6C1C"/>
+              </linearGradient>
+              <linearGradient id="yogaEmeraldGrad" x1="20" y1="10" x2="44" y2="50" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#2D604C"/>
+                <stop offset="100%" stop-color="#0A2118"/>
+              </linearGradient>
+              <radialGradient id="yogaAuraGrad" cx="32" cy="32" r="30" gradientUnits="userSpaceOnUse">
+                <stop offset="60%" stop-color="#FAF7F2"/>
+                <stop offset="100%" stop-color="#ECE3D2" stop-opacity="0.75"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Sacred Aura Medallion -->
+            <circle cx="32" cy="32" r="30" fill="url(#yogaAuraGrad)" class="mandala-bg"/>
+            <circle cx="32" cy="32" r="30" stroke="url(#yogaGoldGrad)" stroke-width="1.2" stroke-dasharray="2.5 3.5" opacity="0.8" class="mandala-outer-ring"/>
+            <circle cx="32" cy="32" r="27.5" stroke="#DCD3C3" stroke-width="0.75" class="mandala-inner-ring"/>
+
+            <!-- Chandra Moon (Lunar Restorative Balance) -->
+            <path class="chandra-moon" d="M43 21C41 33 32 42 19 40C27 44 38 43 43 35C45.5 31 45.5 26 43 21Z" 
+                  fill="url(#yogaGoldGrad)" opacity="0.3"/>
+
+            <!-- Ascending Sacred Lotus Petals (Flowing Prana Energy) -->
+            <path class="lotus-petal petal-left-outer" d="M32 38C22 37 13 29 15 18C21 19 28 27 32 38Z" 
+                  fill="url(#yogaGoldGrad)" fill-opacity="0.95"/>
+            <path class="lotus-petal petal-right-outer" d="M32 38C42 37 51 29 49 18C43 19 36 27 32 38Z" 
+                  fill="url(#yogaGoldGrad)" fill-opacity="0.95"/>
+            <path class="lotus-petal petal-left-inner" d="M32 40C25 34 22 24 25 15C29 21 31 29 32 40Z" 
+                  fill="url(#yogaEmeraldGrad)" fill-opacity="0.9"/>
+            <path class="lotus-petal petal-right-inner" d="M32 40C39 34 42 24 39 15C35 21 33 29 32 40Z" 
+                  fill="url(#yogaEmeraldGrad)" fill-opacity="0.9"/>
+
+            <!-- Meditating Yogi Figure in Lotus Pose with Anjali Mudra -->
+            <path class="yogi-base" d="M20 44.5C23 40.5 27 39 32 39C37 39 41 40.5 44 44.5C42 47.5 38 48.5 32 48.5C26 48.5 22 47.5 20 44.5Z" 
+                  fill="url(#yogaEmeraldGrad)"/>
+            <path class="yogi-torso" d="M32 25C29.5 27.5 28.5 30 29 34C30.5 35 33.5 35 35 34C35.5 30 34.5 27.5 32 25Z" 
+                  fill="url(#yogaEmeraldGrad)"/>
+            <circle class="yogi-head" cx="32" cy="21" r="3.2" fill="url(#yogaEmeraldGrad)"/>
+
+            <!-- Illuminated Crown Chakra Flame & Golden Bindu -->
+            <circle class="crown-bindu" cx="32" cy="14" r="2.2" fill="url(#yogaGoldGrad)"/>
+            <path class="crown-flame" d="M32 8.5C30.8 10.5 30.8 12.2 32 13.5C33.2 12.2 33.2 10.5 32 8.5Z" fill="url(#yogaGoldGrad)"/>
+
+            <!-- Grounding Ripples -->
+            <path class="grounding-ripple ripple-1" d="M22 52C26 54 38 54 42 52" stroke="url(#yogaGoldGrad)" stroke-width="1.6" stroke-linecap="round"/>
+            <path class="grounding-ripple ripple-2" d="M26 55.5C28.5 56.8 35.5 56.8 38 55.5" stroke="url(#yogaEmeraldGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+          <div class="brand-text">
+            <span class="brand-title">Prana &amp; Sage</span>
+            <span class="brand-tagline">Yoga &amp; Wellness Sanctuary</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Left Middle: Monumental Headline & Description -->
+      <div class="split-left-center">
+        <h1 class="left-hero-heading" id="leftHeroTitle">Begin Your Sacred Journey</h1>
+        <p class="left-hero-desc" id="leftHeroDesc">
+          Create your sanctuary profile to reserve sacred shala mats, synchronize circadian wellness routines, schedule hydrothermal restoration rituals, and unlock personalized retreat programs.
+        </p>
+      </div>
+
+      <!-- Left Bottom: Security & Copyright Notice -->
+      <div class="split-left-bottom">
+        &copy; 2026 Prana &amp; Sage Sanctuary. All Rights Reserved. SSL Secure 256-Bit Socket Layer encryption enabled.
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         RIGHT 50%: REGISTRATION STAGE (Matching login.html)
+         ======================================================================== -->
+    <div class="split-right-panel">
+
+      <!-- Top-Right Actions: Dark Mode Toggle Only -->
+      <div class="split-right-top-bar">
+        <!-- Theme Toggle Button -->
+        <button class="icon-ctrl-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+          <!-- Sun Icon (Active in Dark Mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Active in Light Mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Form Center Stage -->
+      <div class="split-form-stage">
+
+        <!-- Form Header -->
+        <h2 class="form-header-title" id="formHeaderTitle">Create Sanctuary Account</h2>
+        <p class="form-header-subtitle" id="formHeaderSubtitle">
+          Join Prana &amp; Sage to access holistic yoga, hydrotherapy &amp; mindful wellness.
+        </p>
+
+        <!-- REGISTRATION / SIGN UP FORM -->
+        <form class="auth-pure-form" id="registerForm" onsubmit="event.preventDefault(); window.handleRegisterSubmit();">
+          
+          <!-- Full Name Field -->
+          <div class="form-row-group">
+            <div class="field-top-label-row">
+              <label class="pure-form-label" for="regName">Full Legal Name</label>
+            </div>
+            <div class="pure-input-wrapper">
+              <input 
+                type="text" 
+                id="regName" 
+                name="fullName" 
+                class="pure-form-input" 
+                placeholder="Elena Vance" 
+                required 
+                autocomplete="name"
+              >
+            </div>
+          </div>
+
+          <!-- Email Address Field -->
+          <div class="form-row-group">
+            <div class="field-top-label-row">
+              <label class="pure-form-label" for="regEmail">Email Address</label>
+            </div>
+            <div class="pure-input-wrapper">
+              <input 
+                type="email" 
+                id="regEmail" 
+                name="email" 
+                class="pure-form-input" 
+                placeholder="elena@domain.com" 
+                required 
+                autocomplete="email"
+              >
+            </div>
+          </div>
+
+          <!-- Secret Password Field with Eye Toggle -->
+          <div class="form-row-group">
+            <div class="field-top-label-row">
+              <label class="pure-form-label" for="regPass">Choose Password</label>
+            </div>
+            <div class="pure-input-wrapper">
+              <input 
+                type="password" 
+                id="regPass" 
+                name="password" 
+                class="pure-form-input has-eye" 
+                placeholder="Minimum 8 characters" 
+                required 
+                autocomplete="new-password"
+              >
+              <button type="button" class="pure-eye-btn" id="toggleRegPassword" aria-label="Toggle password visibility">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Checkbox: Sanctuary Terms & Etiquette -->
+          <label class="pure-checkbox-row">
+            <input type="checkbox" id="regTerms" required checked>
+            <span>I accept the Sanctuary Etiquette &amp; Privacy Policy</span>
+          </label>
+
+          <!-- Main CTA Submit Button -->
+          <button type="submit" class="btn-dashboard-submit" id="btnRegisterSubmit">
+            <span>Create Sanctuary Account</span>
+          </button>
+
+          <!-- OR REGISTER VIA Divider -->
+          <div class="divider-row-tag">
+            <span class="divider-row-text">Or Register Via</span>
+          </div>
+
+          <!-- Social Trio Buttons: Google, Apple, Facebook -->
+          <div class="social-row-trio">
+            <!-- Google (Colored G) -->
+            <button type="button" class="btn-social-card" id="btnRegGoogle" aria-label="Sign up with Google">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+              </svg>
+            </button>
+
+            <!-- Apple (Clean Apple Silhouette) -->
+            <button type="button" class="btn-social-card" id="btnRegApple" aria-label="Sign up with Apple">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-.95 2.76.99.08 2.06-.51 2.68-1.26z"/>
+              </svg>
+            </button>
+
+            <!-- Facebook (Official Blue) -->
+            <button type="button" class="btn-social-card" id="btnRegFacebook" aria-label="Sign up with Facebook">
+              <svg viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Bottom Switch Link: Already have an account? Sign In -->
+          <div class="bottom-switch-row">
+            Already have an account?
+            <a href="login.html" class="bottom-switch-link" id="linkToSignIn">Sign In</a>
+          </div>
+
+        </form>
+
+      </div>
+
+      <!-- Right Bottom Spacer / Subtle Watermark -->
+      <div style="font-size: 0.72rem; color: var(--color-text-muted); text-align: center; opacity: 0.65; padding-top: 0.35rem;">
+        Protected by reCAPTCHA Enterprise • Prana &amp; Sage Lineage
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION COMPONENT
+       ========================================================================== -->
+  <div class="toast-notice" id="toastNotice" role="alert" aria-live="assertive">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ECC369" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMsg">Action completed successfully.</span>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT FUNCTIONALITY
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Dark Mode / Light Mode Theme Engine
+      const themeToggle = document.getElementById('themeToggle');
+      const iconSun = themeToggle ? themeToggle.querySelector('.icon-sun') : null;
+      const iconMoon = themeToggle ? themeToggle.querySelector('.icon-moon') : null;
+
+      const applyTheme = (isDark) => {
+        if (isDark) {
+          document.body.classList.add('dark-mode');
+          if (iconSun) iconSun.style.display = 'block';
+          if (iconMoon) iconMoon.style.display = 'none';
+          localStorage.setItem('sanctuary-theme', 'dark');
+        } else {
+          document.body.classList.remove('dark-mode');
+          if (iconSun) iconSun.style.display = 'none';
+          if (iconMoon) iconMoon.style.display = 'block';
+          localStorage.setItem('sanctuary-theme', 'light');
+        }
+      };
+
+      const savedTheme = localStorage.getItem('sanctuary-theme');
+      if (savedTheme === 'light') {
+        applyTheme(false);
+      } else {
+        applyTheme(true); // Default to dark mode matching login.html
+      }
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const isDark = document.body.classList.contains('dark-mode');
+          applyTheme(!isDark);
+        });
+      }
+
+      // 2. Password Show / Hide Toggle
+      const setupPasswordToggle = (btnId, inputId) => {
+        const btn = document.getElementById(btnId);
+        const input = document.getElementById(inputId);
+        if (btn && input) {
+          btn.addEventListener('click', () => {
+            const isPass = input.type === 'password';
+            input.type = isPass ? 'text' : 'password';
+            btn.innerHTML = isPass
+              ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`
+              : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+          });
+        }
+      };
+
+      setupPasswordToggle('toggleRegPassword', 'regPass');
+
+      // 3. Toast Helper
+      let toastTimer = null;
+      const showToast = (message) => {
+        const toast = document.getElementById('toastNotice');
+        const toastMsg = document.getElementById('toastMsg');
+        if (!toast || !toastMsg) return;
+        toastMsg.textContent = message;
+        toast.classList.add('show');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3400);
+      };
+
+      // 4. Form Submission Handler
+      window.handleRegisterSubmit = () => {
+        const nameInput = document.getElementById('regName');
+        const emailInput = document.getElementById('regEmail');
+        const nameVal = nameInput ? nameInput.value.trim() : 'Guest';
+        const emailVal = emailInput ? emailInput.value.trim() : '';
+
+        showToast(`Welcome ${nameVal}! Sanctuary account created. Redirecting to sign in...`);
+        setTimeout(() => {
+          window.location.href = 'login.html';
+        }, 1800);
+      };
+
+      // 5. Social Authentication Stubs
+      const socialButtons = [
+        { id: 'btnRegGoogle', provider: 'Google' },
+        { id: 'btnRegApple', provider: 'Apple' },
+        { id: 'btnRegFacebook', provider: 'Facebook' }
+      ];
+
+      socialButtons.forEach(({ id, provider }) => {
+        const btn = document.getElementById(id);
+        if (btn) {
+          btn.addEventListener('click', () => {
+            showToast(`Connecting with ${provider} OAuth...`);
+            setTimeout(() => {
+              showToast(`Connected with ${provider}. Redirecting...`);
+              setTimeout(() => {
+                window.location.href = 'index.html';
+              }, 1200);
+            }, 900);
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
