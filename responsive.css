@@ -29,6 +29,36 @@ img, picture, video, canvas {
   height: auto !important;
 }
 
+/* Preserved Full-Bleed Architectural Canvases & Portals */
+.bathhouse-portal-arch img,
+.shirodhara-shrine-frame img,
+.subterranean-dome-frame img,
+.atrium-hero-canvas-wrap img,
+.sabbatical-terrace-canvas img,
+.shala-letterbox-portal img,
+.hero-canvas-wrapper img,
+.sanctuary-portrait-frame img,
+.apothecary-photo-portal img,
+.threshold-canvas img,
+.founder-portrait-frame img,
+.lineage-canvas-frame img,
+.sedona-terrace-canvas img,
+.portal-portrait-frame img,
+.consultation-portal-frame img,
+.faculty-portrait-frame img,
+.location-terrace-canvas img,
+.hero-stele-portal img,
+.sanctum-octagonal-frame img,
+.apothecary-photo-arch img,
+.atlas-cinematic-canvas img,
+.atelier-portrait-stele img,
+.shoji-screen-frame img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
 svg {
   max-width: 100%;
 }
@@ -113,7 +143,11 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .gallery-intro-section,
   .gallery-showcase-section,
   .gallery-dualities-section,
-  .contact-gateways-stage {
+  .contact-gateways-stage,
+  .contact-ledger-stage,
+  .contact-atlas-stage,
+  .contact-atelier-stage,
+  .contact-chashitsu-stage {
     padding: 5rem 1.5rem !important;
   }
 
@@ -146,6 +180,7 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .sanctuary-triad-grid,
   .dualities-split-grid,
   .contact-hero-grid,
+  .hero-creative-layout,
   .gateways-mandala-grid,
   .ledger-stage-grid,
   .atelier-display-grid,
@@ -213,6 +248,10 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .about-sec-section,
   .service-sec-section,
   .contact-gateways-stage,
+  .contact-ledger-stage,
+  .contact-atlas-stage,
+  .contact-atelier-stage,
+  .contact-chashitsu-stage,
   .gallery-intro-section,
   .gallery-showcase-section,
   .gallery-dualities-section {
@@ -410,6 +449,70 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
     height: auto !important;
   }
 
+  /* Contact Page Responsive Frames & Visual Alignment */
+  .hero-stele-portal,
+  .apothecary-photo-arch,
+  .atelier-portrait-stele,
+  .shoji-screen-frame {
+    aspect-ratio: 4 / 3.2 !important;
+    max-height: 360px !important;
+    width: 100% !important;
+  }
+
+  .revolving-sanskrit-seal {
+    width: 80px !important;
+    height: 80px !important;
+    bottom: -0.75rem !important;
+    left: 0.5rem !important;
+  }
+
+  .atlas-cinematic-canvas {
+    height: auto !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .atlas-cinematic-canvas img {
+    height: 260px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .chamber-tabs-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0.35rem !important;
+    gap: 0.35rem !important;
+  }
+
+  .chamber-tab-pill {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0.55rem 0.85rem !important;
+  }
+
+  .circadian-sky-dial {
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+    border-radius: 20px !important;
+    padding: 0.5rem 0.85rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .dial-info-text {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.2rem !important;
+  }
+
+  .shoji-pause-card {
+    margin-top: 1.25rem !important;
+    padding: 1.25rem !important;
+  }
+
   /* Sabbatical and Atlas Overlays & Buttons */
   .sabbatical-canvas-overlay,
   .atlas-canvas-caption-card {
@@ -508,6 +611,10 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .about-sec-section,
   .service-sec-section,
   .contact-gateways-stage,
+  .contact-ledger-stage,
+  .contact-atlas-stage,
+  .contact-atelier-stage,
+  .contact-chashitsu-stage,
   .gallery-intro-section,
   .gallery-showcase-section,
   .gallery-dualities-section {
@@ -630,9 +737,14 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   }
 
   .atelier-portrait-stele,
+  .hero-stele-portal,
+  .apothecary-photo-arch,
+  .shoji-screen-frame,
   .subterranean-dome-frame {
     width: 100% !important;
     max-width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    max-height: 280px !important;
   }
 
   .dome-bottom-caption,
@@ -764,6 +876,10 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .about-sec-section,
   .service-sec-section,
   .contact-gateways-stage,
+  .contact-ledger-stage,
+  .contact-atlas-stage,
+  .contact-atelier-stage,
+  .contact-chashitsu-stage,
   .gallery-intro-section,
   .gallery-showcase-section,
   .gallery-dualities-section {

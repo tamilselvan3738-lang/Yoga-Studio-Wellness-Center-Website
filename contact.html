@@ -4154,7 +4154,87 @@
 
     @media (max-width: 768px) {
       .contact-hero-stage {
-        padding: 6.5rem 0 4rem;
+        padding: 5.5rem 0 3rem;
+      }
+      .contact-gateways-stage,
+      .contact-ledger-stage,
+      .contact-atlas-stage,
+      .contact-atelier-stage,
+      .contact-chashitsu-stage {
+        padding: 3.5rem 0 2.5rem;
+      }
+      .hero-creative-layout,
+      .gateways-mandala-grid,
+      .ledger-stage-grid,
+      .atelier-display-grid,
+      .chashitsu-editorial-split {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+      }
+      .hero-stele-portal,
+      .apothecary-photo-arch,
+      .atelier-portrait-stele,
+      .shoji-screen-frame {
+        aspect-ratio: 4 / 3.2;
+        max-height: 360px;
+        width: 100%;
+      }
+      .hero-stele-portal img,
+      .sanctum-octagonal-frame img,
+      .apothecary-photo-arch img,
+      .atlas-cinematic-canvas img,
+      .atelier-portrait-stele img,
+      .shoji-screen-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .revolving-sanskrit-seal {
+        width: 80px;
+        height: 80px;
+        bottom: -0.75rem;
+        left: 0.5rem;
+      }
+      .atlas-cinematic-canvas {
+        height: auto;
+        margin-bottom: 2rem;
+      }
+      .atlas-cinematic-canvas img {
+        height: 260px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .chamber-tabs-nav {
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.35rem;
+        gap: 0.35rem;
+      }
+      .chamber-tab-pill {
+        width: 100%;
+        text-align: center;
+        padding: 0.55rem 0.85rem;
+      }
+      .circadian-sky-dial {
+        max-width: 100%;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        padding: 0.5rem 0.85rem;
+        gap: 0.5rem;
+      }
+      .dial-info-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+      }
+      .shoji-pause-card {
+        margin-top: 1.25rem;
+        padding: 1.25rem;
       }
       .dosha-picker-grid {
         grid-template-columns: 1fr;
@@ -4175,7 +4255,9 @@
         right: auto;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 1rem;
+        margin-top: 0;
+        border-radius: 0 0 28px 28px;
+        padding: 1.5rem 1.25rem;
       }
       .session-structure-track {
         grid-template-columns: 1fr;

@@ -2478,9 +2478,13 @@
       align-items: start;
     }
 
+    .schedule-sidebar-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
     .schedule-feature-box {
-      position: sticky;
-      top: 100px;
       background: var(--color-surface);
       border: 1px solid var(--color-border);
       border-radius: 28px;
@@ -2495,7 +2499,7 @@
 
     .schedule-img-wrap {
       position: relative;
-      height: 360px;
+      height: 320px;
     }
 
     .schedule-img-wrap img {
@@ -2521,7 +2525,7 @@
     }
 
     .schedule-feature-body {
-      padding: 2.2rem 2.4rem;
+      padding: 2rem 2.2rem;
     }
 
     .schedule-feature-body h3 {
@@ -2539,11 +2543,380 @@
       font-size: 0.92rem;
       line-height: 1.65;
       color: var(--color-text-body);
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.25rem;
     }
 
     body.dark-mode .schedule-feature-body p {
       color: #B5C9C0;
+    }
+
+    /* Shala Capacity Live Tracker Card */
+    .schedule-capacity-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 28px;
+      padding: 2rem 2.2rem;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    body.dark-mode .schedule-capacity-card {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .capacity-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .capacity-badge-title {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .live-dot-pulse {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+      animation: liveDotPulse 2s infinite ease-in-out;
+      flex-shrink: 0;
+    }
+
+    @keyframes liveDotPulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.35);
+        opacity: 0.55;
+      }
+    }
+
+    .capacity-badge-title h4 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--color-emerald-deep);
+      margin: 0;
+    }
+
+    body.dark-mode .capacity-badge-title h4 {
+      color: #F8F6F0;
+    }
+
+    .capacity-counter-pill {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      color: #10B981;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    .capacity-subtext {
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--color-text-body);
+      margin-bottom: 1.4rem;
+    }
+
+    body.dark-mode .capacity-subtext {
+      color: #B5C9C0;
+    }
+
+    .capacity-bars-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .capacity-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.84rem;
+      gap: 0.5rem;
+    }
+
+    .shala-name {
+      font-weight: 600;
+      color: var(--color-emerald-deep);
+    }
+
+    body.dark-mode .shala-name {
+      color: #E2ECE7;
+    }
+
+    .shala-status {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .status-filling {
+      color: #E67E22;
+    }
+
+    .status-moderate {
+      color: var(--color-gold-primary);
+    }
+
+    .status-open {
+      color: #10B981;
+    }
+
+    .capacity-bar-track {
+      width: 100%;
+      height: 7px;
+      background: rgba(10, 33, 24, 0.07);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 0.45rem;
+    }
+
+    body.dark-mode .capacity-bar-track {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .capacity-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .capacity-bar-fill.fill-amber {
+      background: linear-gradient(90deg, #ECC369, #E67E22);
+    }
+
+    .capacity-bar-fill.fill-gold {
+      background: linear-gradient(90deg, #C99436, #ECC369);
+    }
+
+    .capacity-bar-fill.fill-green {
+      background: linear-gradient(90deg, #10B981, #34D399);
+    }
+
+    .capacity-amenity-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.8rem;
+      color: var(--color-text-subtle);
+      line-height: 1.45;
+    }
+
+    body.dark-mode .capacity-amenity-footer {
+      border-color: rgba(232, 193, 107, 0.12);
+      color: #8C9E96;
+    }
+
+    .capacity-amenity-footer svg {
+      color: var(--color-gold-primary);
+      flex-shrink: 0;
+    }
+
+    /* Sanctuary Practice Protocol Card */
+    .schedule-protocol-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 28px;
+      padding: 2rem 2.2rem;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    body.dark-mode .schedule-protocol-card {
+      background: var(--color-surface);
+      border-color: rgba(232, 193, 107, 0.16);
+    }
+
+    .protocol-card-head {
+      margin-bottom: 1.25rem;
+    }
+
+    .protocol-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold-primary);
+      display: inline-block;
+      margin-bottom: 0.35rem;
+    }
+
+    .protocol-card-head h4 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--color-emerald-deep);
+      margin: 0;
+    }
+
+    body.dark-mode .protocol-card-head h4 {
+      color: #F8F6F0;
+    }
+
+    .protocol-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .protocol-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .protocol-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    body.dark-mode .protocol-item {
+      border-color: rgba(232, 193, 107, 0.1);
+    }
+
+    .protocol-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(201, 148, 54, 0.12);
+      color: var(--color-gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    body.dark-mode .protocol-icon-box {
+      background: rgba(232, 193, 107, 0.14);
+      color: #ECC369;
+    }
+
+    .protocol-text strong {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.25rem;
+      font-family: var(--font-sans);
+    }
+
+    body.dark-mode .protocol-text strong {
+      color: #F8F6F0;
+    }
+
+    .protocol-text p {
+      font-size: 0.84rem;
+      line-height: 1.55;
+      color: var(--color-text-body);
+      margin: 0;
+    }
+
+    body.dark-mode .protocol-text p {
+      color: #B5C9C0;
+    }
+
+    /* Private Practice Concierge Card */
+    .schedule-concierge-card {
+      background: linear-gradient(145deg, rgba(201, 148, 54, 0.08), rgba(10, 33, 24, 0.03));
+      border: 1px solid rgba(201, 148, 54, 0.32);
+      border-radius: 28px;
+      padding: 2rem 2.2rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    body.dark-mode .schedule-concierge-card {
+      background: linear-gradient(145deg, rgba(201, 148, 54, 0.12), rgba(14, 26, 21, 0.65));
+      border-color: rgba(232, 193, 107, 0.28);
+    }
+
+    .concierge-ornament {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(236, 195, 105, 0.2), rgba(201, 148, 54, 0.1));
+      border: 1px solid rgba(201, 148, 54, 0.4);
+      color: var(--color-gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.15rem;
+    }
+
+    .concierge-kicker {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold-primary);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .schedule-concierge-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--color-emerald-deep);
+      margin-bottom: 0.65rem;
+    }
+
+    body.dark-mode .schedule-concierge-card h4 {
+      color: #F8F6F0;
+    }
+
+    .schedule-concierge-card p {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--color-text-body);
+      margin-bottom: 1.4rem;
+    }
+
+    body.dark-mode .schedule-concierge-card p {
+      color: #B5C9C0;
+    }
+
+    .concierge-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      background: var(--color-emerald-deep);
+      color: #F8F6F0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all var(--transition-smooth);
+      border: 1px solid rgba(232, 193, 107, 0.3);
+    }
+
+    body.dark-mode .concierge-cta-btn {
+      background: linear-gradient(135deg, #ECC369, #C99436);
+      color: #0A2118;
+      border-color: transparent;
+      font-weight: 700;
+    }
+
+    .concierge-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(201, 148, 54, 0.35);
     }
 
     /* Filter Tabs */
@@ -3558,21 +3931,126 @@
       </div>
 
       <div class="home-schedule-layout">
-        <!-- Left Column: Sticky Practice Highlight Box -->
-        <div class="schedule-feature-box">
-          <div class="schedule-img-wrap">
-            <img src="images/home_daily_practice.jpg" alt="Mindful group practice moving in unison in sunlit wooden shala with high exposed timber beams" width="800" height="600" loading="lazy">
-            <span class="schedule-img-badge">Next Gathering • 05:30 PM</span>
-          </div>
-          <div class="schedule-feature-body">
-            <h3>Restorative Yin &amp; Halite Sound</h3>
-            <p>
-              A slow-paced evening practice targeting deep connective tissues and fascia, followed by crystal bowl sound healing inside the Solstice Shala.
-            </p>
-            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
-              <span class="lens-spec-pill">Lead: Sarah Sterling</span>
-              <span class="lens-spec-pill">Level: All Practitioners</span>
+        <!-- Left Column: Sanctuary Practice Navigator & Sidebar Modules -->
+        <div class="schedule-sidebar-col">
+          <!-- Module 1: Featured Spotlight Practice -->
+          <div class="schedule-feature-box">
+            <div class="schedule-img-wrap">
+              <img src="images/home_daily_practice.jpg" alt="Mindful group practice moving in unison in sunlit wooden shala with high exposed timber beams" width="800" height="600" loading="lazy">
+              <span class="schedule-img-badge">Next Gathering • 05:30 PM</span>
             </div>
+            <div class="schedule-feature-body">
+              <h3>Restorative Yin &amp; Halite Sound</h3>
+              <p>
+                A slow-paced evening practice targeting deep connective tissues and fascia, followed by crystal bowl sound healing inside the Solstice Shala.
+              </p>
+              <div style="display: flex; gap: 0.85rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+                <span class="lens-spec-pill">Lead: Sarah Sterling</span>
+                <span class="lens-spec-pill">Level: All Practitioners</span>
+                <span class="lens-spec-pill">Mats: 4 Left</span>
+              </div>
+              <a href="contact.html" class="class-action-btn" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; text-align: center;">Reserve Spotlight Mat</a>
+            </div>
+          </div>
+
+          <!-- Module 2: Live Shala Capacity & Mat Availability -->
+          <div class="schedule-capacity-card" aria-label="Live Shala Availability">
+            <div class="capacity-card-head">
+              <div class="capacity-badge-title">
+                <span class="live-dot-pulse" aria-hidden="true"></span>
+                <h4>Live Shala Capacity</h4>
+              </div>
+              <span class="capacity-counter-pill">3 Shalas Open</span>
+            </div>
+            <p class="capacity-subtext">Real-time attendance density across our circadian practice pavilions for today:</p>
+            <div class="capacity-bars-wrap">
+              <div class="capacity-item">
+                <div class="capacity-item-header">
+                  <span class="shala-name">The Solstice Shala (Solar Flow)</span>
+                  <span class="shala-status status-filling">24 / 28 Mats • 86%</span>
+                </div>
+                <div class="capacity-bar-track">
+                  <div class="capacity-bar-fill fill-amber" style="width: 86%;"></div>
+                </div>
+              </div>
+
+              <div class="capacity-item">
+                <div class="capacity-item-header">
+                  <span class="shala-name">The Nada Dome (Acoustic &amp; Yin)</span>
+                  <span class="shala-status status-moderate">12 / 16 Mats • 75%</span>
+                </div>
+                <div class="capacity-bar-track">
+                  <div class="capacity-bar-fill fill-gold" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="capacity-item">
+                <div class="capacity-item-header">
+                  <span class="shala-name">The Basalt Thermal Circuit</span>
+                  <span class="shala-status status-open">8 / 12 Immersion • 67%</span>
+                </div>
+                <div class="capacity-bar-track">
+                  <div class="capacity-bar-fill fill-green" style="width: 67%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="capacity-amenity-footer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Manduka® Pro mats, cork props, and organic lavender eye pillows provided complimentary.</span>
+            </div>
+          </div>
+
+          <!-- Module 3: Mindful Sanctuary Arrival Protocol -->
+          <div class="schedule-protocol-card" aria-label="Mindful Sanctuary Guidelines">
+            <div class="protocol-card-head">
+              <span class="protocol-badge">PRACTICE PROTOCOL</span>
+              <h4>Sanctuary Etiquette</h4>
+            </div>
+            <ul class="protocol-list" role="list">
+              <li class="protocol-item">
+                <div class="protocol-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="protocol-text">
+                  <strong>15-Minute Threshold</strong>
+                  <p>Arrive 15 minutes before the chime. Footwear is deposited in the cedar shoe foyer.</p>
+                </div>
+              </li>
+              <li class="protocol-item">
+                <div class="protocol-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <div class="protocol-text">
+                  <strong>Faraday Digital Silence</strong>
+                  <p>Phones remain in copper-lined personal lockers to preserve biomagnetic calm.</p>
+                </div>
+              </li>
+              <li class="protocol-item">
+                <div class="protocol-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div class="protocol-text">
+                  <strong>Noble Silence (Mauna)</strong>
+                  <p>Maintain quiet in shala corridors. Gentle conversation is welcome in the tea courtyard.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Module 4: Private Practice Concierge Callout -->
+          <div class="schedule-concierge-card" aria-label="Private Practice Inquiries">
+            <div class="concierge-ornament" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span class="concierge-kicker">BESPOKE PRACTICES</span>
+            <h4>Need Private Guidance?</h4>
+            <p>Consult with our lead yogic mentors for 1-on-1 therapeutic alignments, personal breathwork, or sound immersion.</p>
+            <a href="contact.html" class="concierge-cta-btn">
+              <span>Speak with Concierge</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
           </div>
         </div>
 

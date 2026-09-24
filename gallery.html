@@ -2614,22 +2614,22 @@
 
         <!-- 2. About -->
         <li class="nav-item">
-          <a href="./about.html" class="nav-link">About</a>
+          <a href="about.html" class="nav-link">About</a>
         </li>
 
-        <!-- 3. Gallery -->
+        <!-- 3. Gallery (Active on this page) -->
         <li class="nav-item">
-          <a href="./gallery.html" class="nav-link is-active">Gallery</a>
+          <a href="gallery.html" class="nav-link is-active">Gallery</a>
         </li>
 
         <!-- 4. Service -->
         <li class="nav-item">
-          <a href="./service.html" class="nav-link">Service</a>
+          <a href="service.html" class="nav-link">Service</a>
         </li>
 
         <!-- 5. Contact -->
         <li class="nav-item">
-          <a href="./contact.html" class="nav-link">Contact</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </li>
 
       </ul>
@@ -2658,7 +2658,7 @@
         </button>
 
         <!-- Member Login Button (Champagne Gold Shimmer CTA, Hidden in Tab & Mobile) -->
-        <button class="btn-cta btn-login" id="loginBtn" aria-label="Member Login" onclick="window.location.href='./login.html'">
+        <button class="btn-cta btn-login" id="loginBtn" aria-label="Member Login" onclick="window.location.href='login.html'">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
@@ -3254,7 +3254,7 @@
       </button>
     </div>
 
-    <!-- Mobile Accordion Nav: Home (Home 1, Home 2), About, Service, Contact -->
+    <!-- Mobile Accordion Nav: Home, About, Gallery, Service, Contact -->
     <ul class="mobile-nav-list">
       
       <!-- Home with Accordion -->
@@ -3266,28 +3266,28 @@
 
       <!-- About (Direct link) -->
       <li class="mobile-nav-item">
-        <a href="#about" class="mobile-nav-header" onclick="closeDrawer()">
+        <a href="about.html" class="mobile-nav-header" onclick="closeDrawer()">
           <span>About</span>
         </a>
       </li>
 
-      <!-- Gallery (Direct link) -->
+      <!-- Gallery (Direct link - Active) -->
       <li class="mobile-nav-item">
-        <a href="gallery.html" class="mobile-nav-header is-active" onclick="closeDrawer()">
-          <span>Gallery</span>
+        <a href="gallery.html" class="mobile-nav-header" onclick="closeDrawer()">
+          <span style="color: var(--color-gold-primary); font-weight: 600;">Gallery</span>
         </a>
       </li>
 
       <!-- Service (Direct link) -->
       <li class="mobile-nav-item">
-        <a href="#service" class="mobile-nav-header" onclick="closeDrawer()">
+        <a href="service.html" class="mobile-nav-header" onclick="closeDrawer()">
           <span>Service</span>
         </a>
       </li>
 
       <!-- Contact (Direct link) -->
       <li class="mobile-nav-item">
-        <a href="#contact" class="mobile-nav-header" onclick="closeDrawer()">
+        <a href="contact.html" class="mobile-nav-header" onclick="closeDrawer()">
           <span>Contact</span>
         </a>
       </li>
@@ -3364,7 +3364,7 @@
         <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
           Sign In to Portal
         </button>
-        <p class="login-footer-note">New to Prana? <a href="#about" onclick="document.getElementById('loginModal').classList.remove('is-active'); document.body.style.overflow = '';">Start with an Intro Pass</a></p>
+        <p class="login-footer-note">New to Prana? <a href="about.html" onclick="document.getElementById('loginModal').classList.remove('is-active'); document.body.style.overflow = '';">Start with an Intro Pass</a></p>
       </form>
     </div>
   </div>
