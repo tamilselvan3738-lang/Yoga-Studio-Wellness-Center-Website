@@ -1872,10 +1872,10 @@
       background: #0A2118;
     }
     .hero-arch-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
       transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
     }
     .hero-arch-portal:hover .hero-arch-img {
@@ -1991,10 +1991,10 @@
       background: #0A2118;
     }
     .temple-alcove-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
       transition: transform 0.8s ease;
     }
     .temple-alcove-frame:hover .temple-alcove-img {
@@ -2223,10 +2223,10 @@
       z-index: 2;
     }
     .koshas-mandala-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
       transition: transform 0.8s ease;
     }
 
@@ -2380,10 +2380,10 @@
       box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.75);
     }
     .pavilion-stage-img {
-      width: 100%;
-      height: 520px;
-      object-fit: cover;
-      display: block;
+      width: 100% !important;
+      height: 520px !important;
+      object-fit: cover !important;
+      display: block !important;
       transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .pavilion-cinematic-stage:hover .pavilion-stage-img {
@@ -2670,10 +2670,10 @@
       overflow: hidden;
     }
     .master-portrait-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
       transition: transform 0.8s ease;
     }
     .master-atelier-card:hover .master-portrait-img {
@@ -2839,10 +2839,10 @@
       border: 1.5px solid rgba(201, 148, 54, 0.35);
     }
     .retreat-horizon-img {
-      width: 100%;
-      height: 520px;
-      object-fit: cover;
-      display: block;
+      width: 100% !important;
+      height: 520px !important;
+      object-fit: cover !important;
+      display: block !important;
       transition: transform 1.2s ease;
     }
     .retreat-horizon-wrapper:hover .retreat-horizon-img {
@@ -3116,8 +3116,9 @@
         display: flex;
         flex-direction: column;
       }
-      .pavilion-stage-img {
-        height: 400px;
+      .pavilion-stage-img,
+      .retreat-horizon-img {
+        height: 400px !important;
       }
       .pavilion-stage-footer {
         position: relative;
@@ -3162,8 +3163,9 @@
         margin-top: 1rem;
         border-radius: 18px;
       }
-      .pavilion-stage-img {
-        height: 340px;
+      .pavilion-stage-img,
+      .retreat-horizon-img {
+        height: 340px !important;
       }
       .pavilion-stage-footer {
         padding: 1.75rem 1.4rem;
@@ -3187,8 +3189,9 @@
       .guide-selector-tabs {
         flex-direction: column;
       }
-      .pavilion-stage-img {
-        height: 280px;
+      .pavilion-stage-img,
+      .retreat-horizon-img {
+        height: 280px !important;
       }
       .sound-console-hud {
         padding: 0.65rem 1.15rem;
@@ -3198,15 +3201,6 @@
       }
       .sound-console-subtitle {
         font-size: 0.68rem;
-      }
-      .about-hero-title {
-        font-size: 2.2rem;
-      }
-      .about-sec-title {
-        font-size: 1.85rem;
-      }
-      .guide-selector-tabs {
-        flex-direction: column;
       }
     }
   </style>

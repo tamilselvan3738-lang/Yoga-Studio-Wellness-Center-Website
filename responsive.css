@@ -36,6 +36,14 @@ img, picture, video, canvas {
 .atrium-hero-canvas-wrap img,
 .sabbatical-terrace-canvas img,
 .shala-letterbox-portal img,
+.hero-arch-portal img,
+.hero-arch-img,
+.temple-alcove-frame img,
+.temple-alcove-img,
+.koshas-core-artwork img,
+.koshas-mandala-img,
+.master-portrait-wrapper img,
+.master-portrait-img,
 .hero-canvas-wrapper img,
 .sanctuary-portrait-frame img,
 .apothecary-photo-portal img,
@@ -52,9 +60,22 @@ img, picture, video, canvas {
 .apothecary-photo-arch img,
 .atlas-cinematic-canvas img,
 .atelier-portrait-stele img,
-.shoji-screen-frame img {
+.shoji-screen-frame img,
+.channel-portal-arch img,
+.consultation-stele-portal img,
+.location-landscape-canvas img,
+.faculty-pedestal-portrait img,
+.chashitsu-alcove-frame img {
   width: 100% !important;
   height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.pavilion-stage-img,
+.retreat-horizon-img {
+  width: 100% !important;
+  height: 520px !important;
   object-fit: cover !important;
   display: block !important;
 }
@@ -442,6 +463,11 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .temple-alcove-frame,
   .location-stage-img {
     height: 320px !important;
+  }
+
+  .pavilion-stage-img,
+  .retreat-horizon-img {
+    height: 340px !important;
   }
 
   .shala-letterbox-portal {
@@ -1001,6 +1027,11 @@ button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
   .temple-alcove-frame,
   .location-stage-img {
     height: 220px !important;
+  }
+
+  .pavilion-stage-img,
+  .retreat-horizon-img {
+    height: 260px !important;
   }
 
   .campus-panoramic-card img,
