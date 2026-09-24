@@ -1,0 +1,1031 @@
+/* ==========================================================================
+   PRANA & SAGE LUXURY WELLNESS SANCTUARY — MASTER RESPONSIVE STYLESHEET
+   Mobile-First, Robust Breakpoints (1024px, 768px, 480px, 320px)
+   Guarantees Zero Horizontal Scroll, Proper Padding, Stacked Cards, Fit Buttons
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL RESET & BASE OVERFLOW PROTECTION
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+html, body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+main, section, header, footer, article, aside, nav, div {
+  max-width: 100%;
+}
+
+/* Fluid Media Protection */
+img, picture, video, canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+svg {
+  max-width: 100%;
+}
+
+/* Prevent text from escaping containers or causing horizontal scroll */
+h1, h2, h3, h4, h5, h6, p, span, a, label, li, blockquote {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  hyphens: manual;
+}
+
+/* General Button Mobile Safety */
+button, .btn-cta, .btn-gold-primary, .btn-outline-glass, .btn-claim-pass,
+.btn-action-primary, .btn-action-secondary, .btn-dashboard-submit {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  word-break: break-word !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. SECTION CONTAINERS & EQUAL SPACING SYSTEM
+   -------------------------------------------------------------------------- */
+.home-container,
+.about-container,
+.service-container,
+.gallery-intro-container,
+.gallery-showcase-container,
+.gallery-dualities-container,
+.contact-container,
+.footer-container {
+  width: 100% !important;
+  max-width: 1320px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. RESPONSIVE BREAKPOINT: TABLET LANDSCAPE / SMALL LAPTOPS (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Navigation Bar: Compact Floating Capsule with Hamburger */
+  .header-wrapper {
+    top: 10px !important;
+    padding: 0 1rem !important;
+  }
+
+  .header-wrapper.is-scrolled {
+    top: 6px !important;
+  }
+
+  .navbar {
+    height: 64px !important;
+    padding: 0 1rem 0 1.25rem !important;
+  }
+
+  .nav-menu {
+    display: none !important;
+  }
+
+  .nav-actions .theme-toggle,
+  .nav-actions .btn-login {
+    display: none !important;
+  }
+
+  .nav-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+  }
+
+  .mobile-toggle {
+    display: flex !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* Section Padding: Clean Equal Spacing */
+  .home-section,
+  .about-sec-section,
+  .service-sec-section,
+  .gallery-intro-section,
+  .gallery-showcase-section,
+  .gallery-dualities-section,
+  .contact-gateways-stage {
+    padding: 5rem 1.5rem !important;
+  }
+
+  /* First Hero Section under Floating Navbar needs generous clearance */
+  #home-hero,
+  .about-hero-section,
+  .service-hero-section,
+  .gallery-hero-section,
+  .contact-hero-stage {
+    padding-top: 6.5rem !important;
+    padding-bottom: 4rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  /* Multi-column grid reductions */
+  .home-triad-grid,
+  .home-schedule-layout,
+  .home-testimonials-wrap,
+  .hero-editorial-grid,
+  .lineage-editorial-layout,
+  .koshas-interactive-stage,
+  .faculty-atelier-layout,
+  .golden-sanctuary-pass,
+  .movement-quadrant-grid,
+  .sound-cymatics-grid,
+  .bathhouse-cascade-layout,
+  .apothecary-drawer-layout,
+  .stelae-matrix-grid,
+  .sanctuary-triad-grid,
+  .dualities-split-grid,
+  .contact-hero-grid,
+  .gateways-mandala-grid,
+  .ledger-stage-grid,
+  .atelier-display-grid,
+  .chashitsu-editorial-split,
+  .embossed-pilgrimage-ticket,
+  .faq-split-stage {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .campus-lenses-grid,
+  .circadian-dial-grid,
+  .metrics-ribbon,
+  .charter-compass-grid,
+  .gallery-cards-grid,
+  .astrolabe-circadian-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5rem !important;
+  }
+
+  /* Central Elements Sizing */
+  .mandala-outer-halo {
+    width: min(380px, 88vw) !important;
+    height: min(380px, 88vw) !important;
+  }
+
+  .koshas-core-artwork {
+    width: min(280px, 66vw) !important;
+    height: min(280px, 66vw) !important;
+  }
+
+  .central-sanctum-medallion {
+    order: -1;
+    width: min(380px, 88vw) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. RESPONSIVE BREAKPOINT: TABLET PORTRAIT / LARGE PHONES (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Brand Tagline hidden on mobile to prevent navbar crowding */
+  .brand-tagline {
+    display: none !important;
+  }
+
+  .brand-title {
+    font-size: 1.25rem !important;
+  }
+
+  .brand-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Section Padding */
+  .home-section,
+  .about-sec-section,
+  .service-sec-section,
+  .contact-gateways-stage,
+  .gallery-intro-section,
+  .gallery-showcase-section,
+  .gallery-dualities-section {
+    padding: 4rem 1.25rem !important;
+  }
+
+  /* First Hero Section under Floating Navbar */
+  #home-hero,
+  .about-hero-section,
+  .service-hero-section,
+  .gallery-hero-section,
+  .contact-hero-stage {
+    padding-top: 6.25rem !important;
+    padding-bottom: 3.5rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .home-container,
+  .about-container,
+  .service-container,
+  .gallery-intro-container,
+  .gallery-showcase-container,
+  .gallery-dualities-container,
+  .contact-container,
+  .footer-container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Typography Scales */
+  .hero-headline,
+  .about-hero-title,
+  .service-hero-title,
+  .gallery-hero-title,
+  .hero-sec-title,
+  .left-hero-heading {
+    font-size: clamp(1.9rem, 6.5vw, 2.75rem) !important;
+    line-height: 1.18 !important;
+  }
+
+  .hero-lead-text,
+  .about-hero-lead,
+  .service-hero-lead,
+  .gallery-hero-subtitle {
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* All Grids Collapse to Single Column */
+  .campus-lenses-grid,
+  .circadian-dial-grid,
+  .metrics-ribbon,
+  .charter-compass-grid,
+  .gallery-cards-grid,
+  .astrolabe-circadian-grid,
+  .dosha-picker-grid,
+  .ledger-inputs-2col,
+  .form-row-2col,
+  .hero-metric-ribbon,
+  .frequency-orbs-cluster,
+  .stone-stela-rituals-grid,
+  .session-structure-track,
+  .pass-features-grid,
+  .schedule-class-card {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Stack Action Button Rows */
+  .hero-actions-row,
+  .pass-actions-row,
+  .pass-buttons-row,
+  .action-links-grid,
+  .modality-linked-ribbon,
+  .pavilion-stage-footer,
+  .footer-bottom-bar,
+  .footer-bottom-right {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.85rem !important;
+    width: 100% !important;
+  }
+
+  .hero-actions-row .btn-gold-primary,
+  .hero-actions-row .btn-outline-glass,
+  .pass-actions-row .btn-gold-primary,
+  .pass-buttons-row .btn-gold-primary,
+  .pass-buttons-row .btn-outline-glass,
+  .btn-action-primary,
+  .btn-action-secondary,
+  .footer-ascend-btn,
+  .btn-claim-pass {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.88rem 1.15rem !important;
+    font-size: 0.88rem !important;
+    line-height: 1.3 !important;
+    border-radius: 999px !important;
+    box-sizing: border-box !important;
+    min-height: 48px !important;
+  }
+
+  /* Hero Portal Overlay and Glass Card */
+  .hero-portal-wrap {
+    padding: 0 !important;
+  }
+
+  .hero-image-box {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .hero-portal-overlay {
+    position: relative !important;
+    min-height: auto !important;
+    padding: 3rem 1rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .hero-glass-card {
+    padding: 2.25rem 1.25rem !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+  }
+
+  /* Schedule Cards */
+  .class-time-slot {
+    border-right: none !important;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.75rem !important;
+  }
+
+  .class-action-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Campus Panoramic HUD */
+  .campus-panoramic-hud {
+    position: static !important;
+    width: 100% !important;
+    border-radius: 16px !important;
+    margin-top: 1rem !important;
+    padding: 1.25rem 1rem !important;
+  }
+
+  .campus-panoramic-card img {
+    height: 260px !important;
+  }
+
+  /* Cards Padding Normalization */
+  .master-pass-card,
+  .golden-sanctuary-pass,
+  .sabbatical-boarding-voucher,
+  .embossed-pilgrimage-ticket,
+  .monastic-parchment-ledger,
+  .consultation-ledger-card,
+  .contact-invitation-box,
+  .chamber-active-dossier,
+  .stela-elevation-card,
+  .retreat-floating-card,
+  .featured-panoramic-overlay,
+  .gallery-cta-card {
+    padding: 2rem 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  /* Kosha Tier Tabs - Prevent translateX overflow */
+  .kosha-tier-tab:hover,
+  .kosha-tier-tab.is-active {
+    transform: translateY(-2px) !important;
+  }
+
+  .kosha-tier-tab {
+    padding: 1rem 0.85rem !important;
+  }
+
+  /* Frames & Portals */
+  .hero-arch-portal,
+  .temple-alcove-frame,
+  .location-stage-img {
+    height: 320px !important;
+  }
+
+  .shala-letterbox-portal {
+    aspect-ratio: 16 / 9 !important;
+    height: auto !important;
+  }
+
+  /* Sabbatical and Atlas Overlays & Buttons */
+  .sabbatical-canvas-overlay,
+  .atlas-canvas-caption-card {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    margin-top: 1rem !important;
+    padding: 1.5rem 1.25rem !important;
+  }
+
+  .sabbatical-canvas-overlay .btn-cta,
+  .atlas-canvas-caption-card .btn-cta {
+    width: 100% !important;
+    padding: 0.85rem 1rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 0.75rem !important;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .sanctuary-footer {
+    padding: 3.5rem 0 2rem !important;
+    margin-top: 4rem !important;
+  }
+
+  /* Mobile Drawer Sizing */
+  .mobile-drawer {
+    width: 85% !important;
+    max-width: 360px !important;
+  }
+
+  /* Modals & Dialogs */
+  .modal-card,
+  .login-card {
+    padding: 2rem 1.5rem !important;
+    max-width: 94vw !important;
+  }
+
+  .login-close-btn,
+  .modal-close-btn {
+    top: 1.5rem !important;
+    right: 1.5rem !important;
+  }
+
+  /* Toast Notification */
+  .toast-notice {
+    left: 1rem !important;
+    right: 1rem !important;
+    bottom: 1rem !important;
+    width: auto !important;
+    max-width: calc(100% - 2rem) !important;
+    justify-content: center !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. RESPONSIVE BREAKPOINT: STANDARD MOBILE SCREENS (<= 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  /* Navbar */
+  .header-wrapper {
+    top: 6px !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .navbar {
+    height: 58px !important;
+    padding: 0 0.75rem !important;
+  }
+
+  .brand-icon {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .brand-title {
+    font-size: 1.15rem !important;
+  }
+
+  .mobile-toggle {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 7px !important;
+  }
+
+  /* Section Padding */
+  .home-section,
+  .about-sec-section,
+  .service-sec-section,
+  .contact-gateways-stage,
+  .gallery-intro-section,
+  .gallery-showcase-section,
+  .gallery-dualities-section {
+    padding: 3.25rem 1rem !important;
+  }
+
+  /* First Hero Section under Floating Navbar */
+  #home-hero,
+  .about-hero-section,
+  .service-hero-section,
+  .gallery-hero-section,
+  .contact-hero-stage {
+    padding-top: 5.75rem !important;
+    padding-bottom: 2.75rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .home-container,
+  .about-container,
+  .service-container,
+  .gallery-intro-container,
+  .gallery-showcase-container,
+  .gallery-dualities-container,
+  .contact-container,
+  .footer-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Typography Scales */
+  .hero-headline,
+  .about-hero-title,
+  .service-hero-title,
+  .gallery-hero-title,
+  .hero-sec-title,
+  .left-hero-heading {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .portal-main-heading,
+  .gallery-intro-heading,
+  .about-sec-title,
+  .contact-sec-title,
+  .form-header-title {
+    font-size: 1.45rem !important;
+  }
+
+  /* Badges */
+  .hero-badge-tag,
+  .gallery-hero-badge,
+  .gallery-intro-badge,
+  .stele-glass-capsule {
+    white-space: normal !important;
+    text-align: center !important;
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* Atlas Layer Tabs: Stacked cleanly */
+  .atlas-layer-tabs {
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: 14px !important;
+    width: 100% !important;
+    padding: 0.35rem !important;
+  }
+
+  .layer-tab-btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0.55rem 0.85rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  /* Gallery Filter Bar */
+  .gallery-filter-bar {
+    gap: 0.45rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 0.95rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  /* Tooltips Inward Bound */
+  .hotspot-tooltip {
+    max-width: calc(100vw - 2rem) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+  }
+
+  .pin-acoustics .hotspot-tooltip,
+  .pin-cedar .hotspot-tooltip {
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  /* Central Mandalas & Arcs */
+  .mandala-outer-halo {
+    width: min(300px, 86vw) !important;
+    height: min(300px, 86vw) !important;
+  }
+
+  .koshas-core-artwork {
+    width: min(210px, 60vw) !important;
+    height: min(210px, 60vw) !important;
+  }
+
+  .central-sanctum-medallion {
+    width: min(300px, 86vw) !important;
+  }
+
+  .sanctum-octagonal-frame {
+    width: 100% !important;
+  }
+
+  .atelier-portrait-stele,
+  .subterranean-dome-frame {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .dome-bottom-caption,
+  .atelier-portrait-caption {
+    padding: 1.25rem 0.85rem !important;
+  }
+
+  .dome-bottom-caption span {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.08em !important;
+    display: block !important;
+    word-break: break-word !important;
+  }
+
+  /* Form Inputs (16px to prevent iOS auto-zoom shift) */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea,
+  .pure-form-input {
+    font-size: 16px !important;
+    padding: 0.65rem 0.85rem !important;
+    width: 100% !important;
+  }
+
+  /* Social Auth Rows */
+  .social-row-trio {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  .btn-social-card {
+    height: 42px !important;
+  }
+
+  /* Split Login & Registration Panels */
+  .split-left-panel {
+    padding: 2rem 1.25rem 1.5rem !important;
+    min-height: auto !important;
+  }
+
+  .split-right-panel {
+    padding: 1.75rem 1.25rem !important;
+  }
+
+  .split-form-stage {
+    padding: 0.5rem 0 !important;
+  }
+
+  /* Mobile Drawer Sizing */
+  .mobile-drawer {
+    width: 90% !important;
+    max-width: 320px !important;
+    padding: 1.5rem 1.15rem !important;
+  }
+
+  /* Modals */
+  .login-card,
+  .modal-card {
+    padding: 2rem 1.25rem !important;
+  }
+
+  .login-close-btn,
+  .modal-close-btn {
+    top: 1.25rem !important;
+    right: 1.25rem !important;
+  }
+
+  /* Lightbox */
+  .lightbox-content-box {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    padding: 0.5rem !important;
+  }
+
+  .lightbox-preview-img {
+    max-height: 60vh !important;
+  }
+
+  .lightbox-close-btn {
+    top: -2.75rem !important;
+    right: 0.25rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. RESPONSIVE BREAKPOINT: ULTRA-NARROW SCREENS (<= 320px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 320px) {
+  /* Navbar */
+  .header-wrapper {
+    top: 4px !important;
+    padding: 0 0.25rem !important;
+  }
+
+  .navbar {
+    height: 52px !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .brand {
+    gap: 0.45rem !important;
+  }
+
+  .brand-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .brand-title {
+    font-size: 1.05rem !important;
+  }
+
+  .mobile-toggle {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 6px !important;
+  }
+
+  .mobile-toggle span {
+    width: 16px !important;
+  }
+
+  /* Section Padding */
+  .home-section,
+  .about-sec-section,
+  .service-sec-section,
+  .contact-gateways-stage,
+  .gallery-intro-section,
+  .gallery-showcase-section,
+  .gallery-dualities-section {
+    padding: 2.5rem 0.75rem !important;
+  }
+
+  /* First Hero Section under Floating Navbar */
+  #home-hero,
+  .about-hero-section,
+  .service-hero-section,
+  .gallery-hero-section,
+  .contact-hero-stage {
+    padding-top: 5rem !important;
+    padding-bottom: 2.25rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .home-container,
+  .about-container,
+  .service-container,
+  .gallery-intro-container,
+  .gallery-showcase-container,
+  .gallery-dualities-container,
+  .contact-container,
+  .footer-container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  /* Typography Scales */
+  .hero-headline,
+  .about-hero-title,
+  .service-hero-title,
+  .gallery-hero-title,
+  .hero-sec-title,
+  .left-hero-heading {
+    font-size: 1.55rem !important;
+    line-height: 1.22 !important;
+  }
+
+  .portal-main-heading,
+  .gallery-intro-heading,
+  .about-sec-title,
+  .contact-sec-title,
+  .form-header-title {
+    font-size: 1.25rem !important;
+  }
+
+  .hero-lead-text,
+  .about-hero-lead,
+  .service-hero-lead,
+  .gallery-hero-subtitle {
+    font-size: 0.88rem !important;
+  }
+
+  /* Buttons on 320px */
+  .btn-gold-primary,
+  .btn-outline-glass,
+  .btn-cta,
+  .btn-claim-pass,
+  .btn-action-primary,
+  .btn-action-secondary,
+  .btn-dashboard-submit {
+    padding: 0.75rem 0.85rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* Hero Portal & Glass Card */
+  .hero-portal-overlay {
+    padding: 2rem 0.5rem !important;
+  }
+
+  .hero-glass-card {
+    padding: 1.75rem 1rem !important;
+    border-radius: 16px !important;
+  }
+
+  /* Cards Padding */
+  .master-pass-card,
+  .golden-sanctuary-pass,
+  .sabbatical-boarding-voucher,
+  .embossed-pilgrimage-ticket,
+  .monastic-parchment-ledger,
+  .consultation-ledger-card,
+  .contact-invitation-box,
+  .chamber-active-dossier,
+  .stela-elevation-card,
+  .retreat-floating-card,
+  .cardinal-gate-tablet,
+  .modal-card,
+  .login-card {
+    padding: 1.15rem 0.75rem !important;
+    border-radius: 14px !important;
+  }
+
+  .login-close-btn,
+  .modal-close-btn {
+    top: 0.65rem !important;
+    right: 0.65rem !important;
+  }
+
+  /* Mandalas & Frames */
+  .mandala-outer-halo {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .koshas-core-artwork {
+    width: 175px !important;
+    height: 175px !important;
+  }
+
+  .central-sanctum-medallion {
+    width: 250px !important;
+  }
+
+  .hero-arch-portal,
+  .temple-alcove-frame,
+  .location-stage-img {
+    height: 220px !important;
+  }
+
+  .campus-panoramic-card img,
+  .featured-panoramic-card img {
+    height: 190px !important;
+  }
+
+  /* 404 Background Orbs */
+  .aura-orb-1,
+  .aura-orb-2 {
+    width: 200px !important;
+    height: 200px !important;
+    pointer-events: none !important;
+  }
+
+  /* Gallery Filters */
+  .filter-btn {
+    padding: 0.42rem 0.65rem !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* Full Screen Mobile Drawer for 320px */
+  .mobile-drawer {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.25rem 0.85rem !important;
+  }
+
+  .drawer-actions-row {
+    gap: 0.5rem !important;
+  }
+
+  .drawer-theme-circle {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .drawer-login-pill {
+    height: 40px !important;
+    font-size: 0.84rem !important;
+    padding: 0 0.75rem !important;
+  }
+
+  /* Footer Bottom Bar */
+  .footer-bottom-bar {
+    font-size: 0.78rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. RTL (RIGHT-TO-LEFT) LANGUAGE SUPPORT & ICON ALIGNMENT
+   -------------------------------------------------------------------------- */
+[dir="rtl"],
+html[dir="rtl"],
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .brand-lockup,
+[dir="rtl"] .brand {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-drawer {
+  right: auto !important;
+  left: 0 !important;
+  transform: translateX(-100%) !important;
+  border-left: none !important;
+  border-right: 1px solid var(--color-border) !important;
+}
+
+[dir="rtl"] .mobile-drawer.is-active {
+  transform: translateX(0) !important;
+}
+
+[dir="rtl"] .drawer-close-btn {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+/* RTL Arrow Icons Mirroring */
+[dir="rtl"] svg.arrow-right,
+[dir="rtl"] .btn-gold-primary svg:not(.brand-icon),
+[dir="rtl"] .btn-cta svg:not(.brand-icon),
+[dir="rtl"] .gallery-card-action svg {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .footer-nav-list a:hover {
+  transform: translateX(-4px) !important;
+}
+
+[dir="rtl"] .footer-contact-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .pure-eye-btn {
+  right: auto !important;
+  left: 0.85rem !important;
+}
+
+[dir="rtl"] .pure-form-input.has-eye {
+  padding-right: 0.95rem !important;
+  padding-left: 2.6rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. DARK MODE & LIGHT MODE ALIGNMENT & CONTRAST
+   -------------------------------------------------------------------------- */
+body.dark-mode .mobile-drawer {
+  background: #09120E !important;
+  border-left: 1px solid rgba(232, 193, 107, 0.2) !important;
+  color: #F3F7F4 !important;
+}
+
+body:not(.dark-mode) .mobile-drawer {
+  background: #F8F6F0 !important;
+  border-left: 1px solid rgba(10, 33, 24, 0.1) !important;
+  color: #0A2118 !important;
+}
+
+body.dark-mode .mobile-nav-header {
+  color: #F3F7F4 !important;
+}
+
+body:not(.dark-mode) .mobile-nav-header {
+  color: #0A2118 !important;
+}
+
+body.dark-mode .hero-glass-card,
+body.dark-mode .modal-card,
+body.dark-mode .login-card {
+  background: rgba(16, 25, 21, 0.92) !important;
+  border-color: rgba(232, 193, 107, 0.25) !important;
+}
+
+body:not(.dark-mode) .hero-glass-card,
+body:not(.dark-mode) .modal-card,
+body:not(.dark-mode) .login-card {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-color: rgba(10, 33, 24, 0.1) !important;
+}
